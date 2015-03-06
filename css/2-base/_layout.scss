@@ -2,9 +2,10 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
+    //border-top: 5px solid $grey-color-dark;
+    //border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
+    margin-top: 10px;
 
     // Positioning context for the mobile navigation icon
     position: relative;
@@ -41,6 +42,7 @@
         }
     }
 
+/*
     @include media-query($on-palm) {
         position: absolute;
         top: 9px;
@@ -84,6 +86,7 @@
             padding: 5px 10px;
         }
     }
+*/
 }
 
 
@@ -105,12 +108,18 @@
 .social-media-list {
     list-style: none;
     margin-left: 0;
+    
+}
+
+.contact-list, .fa {
+	margin-right: 2%;
+    
 }
 
 .footer-col-wrapper {
     font-size: 15px;
     color: $grey-color;
-    margin-left: -$spacing-unit / 2;
+    margin-left: -$spacing-unit / 4;
     @extend %clearfix;
 }
 
@@ -121,13 +130,13 @@
 }
 
 .footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(40% - (#{$spacing-unit} / 2));
+    width:         calc(40% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(15% - (#{$spacing-unit} / 2));
+    width:         calc(15% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-3 {
@@ -172,9 +181,15 @@
 .post-list {
     margin-left: 0;
     list-style: none;
+    @include display(flex);
+    @include justify-content(space-between);
 
     > li {
         margin-bottom: $spacing-unit;
+/*
+        @include display(flex);
+		@include justify-content(space-between);
+*/
     }
 }
 
