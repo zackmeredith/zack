@@ -940,11 +940,16 @@ pre > code {
 }
 .words-container .tagline {
   padding: 0 3vh;
-  color: #848484;
+  color: #858585;
   letter-spacing: 0.1em;
   margin: 0 -0.1em 10vh 0;
   font-size: 16px;
   font-weight: 100;
+}
+@media screen and (max-width: on-palm) {
+  .words-container .tagline {
+    color: #838383;
+  }
 }
 
 .icon-nav {
