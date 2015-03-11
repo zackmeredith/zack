@@ -945,10 +945,12 @@ pre > code {
   margin: 0 -0.1em 10vh 0;
   font-size: 16px;
   font-weight: 100;
+  width: 40%;
 }
-@media screen and (max-width: on-palm) {
+@media screen and (max-width: 600px) {
   .words-container .tagline {
-    color: #838383;
+    color: #828282;
+    width: 90%;
   }
 }
 
