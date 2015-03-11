@@ -957,8 +957,8 @@ pre > code {
   -moz-flex-direction: column;
   flex-direction: column;
   -ms-flex-direction: column;
+  height: 85vh;
   text-align: center;
-  margin-top: 15vh;
 }
 @-webkit-keyframes fadeIn {
   from {
