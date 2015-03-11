@@ -904,12 +904,24 @@ pre > code {
   -webkit-animation-fill-mode: forwards;
   -moz-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+}
+
+.short-fade {
   -webkit-animation-duration: 0.7s;
   -moz-animation-duration: 0.7s;
   animation-duration: 0.7s;
   -webkit-animation-delay: 1s;
   -moz-animation-delay: 1s;
   animation-delay: 1s;
+}
+
+.long-fade {
+  -webkit-animation-duration: 0.7s;
+  -moz-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  animation-delay: 3s;
 }
 
 .words-container {
@@ -947,6 +959,7 @@ pre > code {
   -ms-flex-direction: column;
   height: 90vh;
   text-align: center;
+  margin-top: 5vh;
 }
 @-webkit-keyframes fadeIn {
   from {
@@ -980,7 +993,7 @@ pre > code {
 }
 .words-container .tagline {
   padding: 0 3vh;
-  color: #858585;
+  color: #838383;
   letter-spacing: 0.1em;
   margin: 0 -0.1em 10vh 0;
   font-size: 16px;
@@ -1000,6 +1013,7 @@ pre > code {
 }
 .icon-nav a {
   color: #A19D9D;
+  margin-left: 0;
 }
 .icon-nav a:hover {
   color: #111;
@@ -1009,6 +1023,10 @@ pre > code {
 }
 .icon-nav li:not(:first-child) {
   margin-left: 3vh;
+}
+
+.header-guide-down {
+  margin: 5vh 0 3vh 0;
 }
 
 .face-lockup {

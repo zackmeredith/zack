@@ -63,8 +63,13 @@
 	opacity: 0
 	+animation(fadeIn ease-in 1)
 	+animation-fill-mode(forwards)
+
+.short-fade
 	+animation-duration(0.7s)
 	+animation-delay(1s)
+.long-fade
+	+animation-duration(0.7s)
+	+animation-delay(3s)
 	
 .words-container
 	+display(flex)
@@ -73,7 +78,7 @@
 	+flex-direction(column)
 	height: 90vh
 	text-align: center
-	
+	margin-top: 5vh
 	+keyframes(fadeIn)
 		from
 			opacity: 0
@@ -89,7 +94,7 @@
     
 	.tagline
 		padding: 0 3vh
-		color: #858585
+		color: #838383
 		letter-spacing: 0.1em
 		margin: 0 -0.1em 10vh 0
 		font-size: 16px
@@ -107,6 +112,7 @@
 
 	a
 		color: #A19D9D
+		margin-left: 0
 		
 		&:hover
 			color: #111
@@ -115,6 +121,9 @@
 		
 		&:not(:first-child) 
 			margin-left: 3vh
+
+.header-guide-down
+	margin: 5vh 0 3vh 0
 		
 		
 		
