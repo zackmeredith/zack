@@ -949,7 +949,7 @@ pre > code {
 }
 @media screen and (max-width: 600px) {
   .words-container .tagline {
-    color: #808080;
+    color: #797979;
     width: 90%;
   }
 }
