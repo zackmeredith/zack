@@ -1,7 +1,103 @@
+.site-header 
+	background: #F1F1F1
+	height: 100vh
+	width: 100%
+    
+
+	// Positioning context for the mobile navigation icon
+	position: relative
+ 
+
+.top-bar
+	+align-self(flex-start)
+	+display(flex)
+	+justify-content(space-between)
+	+align-items(center)
+	margin: 0 5vh
+	padding-top: 5vh
+
+
+.logo
+	+size(60px)
+	border: 1px solid white
+	+display(flex)
+	+justify-content(center)
+	+align-items(center)
+	
+	.logo-text
+		font-family: $base-font-family
+		margin: 0
+		font:
+			weight: 100
+			size: 24px
+		color: #111
+
+.site-nav 
+    
+	+display(flex)
+	+flex-wrap(no-wrap)
+
+	
+	+media-query($on-palm)
+		display: none
+		
+	
+	a
+		display: inline-block
+		
+		&:not(:first-child) 
+			margin-left: 3vh
+		
+	
+	h4 
+		text-transform: uppercase
+		font-weight: 400
+		font-size: 16px
+		color: $grey-color
+		opacity: 0.8
+		
+		&:hover
+			color: $grey-color-dark
+
+	
+.words-container
+	+display(flex)
+	+align-items(center)
+	+justify-content(center)
+	+flex-direction(column)
+	height: 90vh
+	text-align: center
+	h2
+		color: #838383
+		size: 36px
+		weight: 400
+		margin-bottom: 5vh
+		
+    
+	.tagline
+		//padding: 0 3vh
+		color: #939393
+		letter-spacing: 0.1em
+		margin: 0 -0.1em 10vh 0
+		font-size: 16px
+		font-weight: 100
+		//margin-bottom: 10vh
+		
 .icon-nav
 	list-style: none
+	margin: 5vh 0 5vh 0
+
+	a
+		color: #A19D9D
+		
+		&:hover
+			color: #111
 	li
 		display: inline-block
-		margin: 0 5px
+		
+		&:not(:first-child) 
+			margin-left: 3vh
 		
 		
+		
+	

@@ -1,16 +1,21 @@
 <header class="site-header">
-
-  <div class="wrapper">
-
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
-    <nav class="site-nav">
-	    <ul class="icon-nav">
-		<li><a href="https://github.com/zackmeredith"><i class="fa fa-github"></i></a></li>
-		<li><a href="https://twitter.com/zackmeredith"><i class="fa fa-twitter"></i></a></li>
-		<li><a href="https://instagram.com/zackmeredith"><i class="fa fa-instagram"></i></a></li>
-		<li><a href="/about"><i class="fa fa-info-circle"></i></a></li>
-  		</ul>
+<div class="top-bar">
+	<div class="logo">
+	<a class="site-title" href="{{ site.baseurl }}/">
+	<span class="logo-text">ZM</span>
+	</a>
+	</div>
+	<nav class="site-nav">		 
+	<a class="page-link" href=""><h4>About</h4></a>
+	<a class="page-link" href=""><h4>Projects</h4></a>
+	<a class="page-link" href=""><h4>Contact</h4></a>
+	<a class="page-link" href=""><h4>Words</h4></a>
+	 
+	</nav>
+</div>
+	<div class="words-container">
+		<h2>Hey.</h2>
+	<span class="tagline">My name is Zack & I strive to create</br>engaging, thoughtful things with computers.</span>
 <!--
       <a href="#" class="menu-icon">
         <svg viewBox="0 0 18 15">
@@ -30,10 +35,12 @@
         {% endfor %}
       </div>
 -->
-    </nav>
-   
-
-  </div>
-  
+       <ul class="icon-nav">
+		<li><a href="https://github.com/zackmeredith"><i class="fa fa-github"></i></a></li>
+		<li><a href="https://twitter.com/zackmeredith"><i class="fa fa-twitter"></i></a></li>
+		<li><a href="https://instagram.com/zackmeredith"><i class="fa fa-instagram"></i></a></li>
+		<li><a href="/about"><i class="fa fa-info-circle"></i></a></li>
+  		</ul>
+	</div>
 
 </header>
