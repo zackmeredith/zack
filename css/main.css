@@ -939,7 +939,8 @@ pre > code {
   margin-bottom: 5vh;
 }
 .words-container .tagline {
-  color: #939393;
+  padding: 0 3vh;
+  color: #909090;
   letter-spacing: 0.1em;
   margin: 0 -0.1em 10vh 0;
   font-size: 16px;
