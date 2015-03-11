@@ -780,7 +780,7 @@ pre > code {
 }
 
 .site-header {
-  background: #F3F3F3;
+  background: #F5F5F5;
   height: 100vh;
   width: 100%;
   position: relative;
@@ -993,7 +993,7 @@ pre > code {
 }
 .words-container .tagline {
   padding: 0 3vh;
-  color: #838383;
+  color: #111;
   letter-spacing: 0.1em;
   margin: 0 -0.1em 5vh 0;
   font-size: 16px;
