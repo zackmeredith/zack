@@ -2,20 +2,21 @@
 layout: default
 ---
 
-<div class="home">
+<div id="work"></div>
+<div class="wrapper wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
 	
 
 <!--   <h1 class="page-heading">Posts</h1> -->
-
+<h3 class="section-heading">Work</h3>
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
 	  	<div class="post-container">
 <!--         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> -->
 		
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><h3 class="post-header">{{ post.title }}</h3></a>
-        
-        <img class="post-img" src="{{ post.featured-image }}" />
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><h3 class="post-header">{{ post.title }}</h3>
+       
+        <img class="post-img" src="{{ post.featured-image }}" /></a>
         
 <!--         {{ post.excerpt }} -->
 <!-- 		<div class="overlay" -->

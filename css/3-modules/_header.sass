@@ -1,70 +1,65 @@
 .site-header 
-	background: #F5F5F5
+	background: #F7F7F7
 	height: 100vh
 	min-height: 100%
 	width: 100%
-    
-
-	// Positioning context for the mobile navigation icon
-	position: relative
- 
 
 .top-bar
 	+align-self(flex-start)
 	+display(flex)
 	+justify-content(space-between)
 	+align-items(center)
-	margin: 0 5vh
-	padding-top: 5vh
-
-
+	padding: 5vh 5vw 3vh 5vw
+		
 .logo
 	+size(60px)
 	border: 1px solid white
-	+display(flex)
-	+justify-content(center)
-	+align-items(center)
+	text-align: center
+	+media-query($on-palm)
+		margin-left: 2vw	
 	
 	.logo-text
 		font-family: $base-font-family
-		margin: 0
+		-webkit-font-smoothing: subpixel-antialiased
 		font:
 			weight: 100
 			size: 24px
-		color: #111
+		color: #999
+		margin: 0 auto
+		line-height: 60px
 
-.site-nav 
-    
-	+display(flex)
-	+flex-wrap(no-wrap)
-
-	
+.site-nav     
 	+media-query($on-palm)
 		display: none
-		
-	
+			
 	a
 		display: inline-block
 		
 		&:not(:first-child) 
-			margin-left: 3vh
-		
+			margin-left: 2vw		
 	
 	h4 
 		text-transform: uppercase
-		font-weight: 400
-		font-size: 16px
-		color: $grey-color
-		opacity: 0.8
-		
+		font:
+			family: 'Lato', sans-serif
+			weight: 300
+			size: 16px
+		color: #898989
+		+transition()
+				
 		&:hover
-			color: $grey-color-dark
+			color: $accent-color
 
 .fade-in
 	opacity: 0
 	+animation(fadeIn ease-in 1)
 	+animation-fill-mode(forwards)
-
+	+keyframes(fadeIn)
+		from
+			opacity: 0
+		to
+			opacity: 1	
+	
 .short-fade
 	+animation-duration(0.7s)
 	+animation-delay(1s)
@@ -77,46 +72,44 @@
 	+align-items(center)
 	+justify-content(center)
 	+flex-direction(column)
-	height: 85vh
+	height: 80vh
 	text-align: center
-	margin-top: 3vh
-	+keyframes(fadeIn)
-		from
-			opacity: 0
-		to
-			opacity: 1
-					
+	padding: 0 2vw 2vh 2vw			
 
 	h2
-		color: #838383
-		size: 36px
-		weight: 400
-		margin-bottom: 5vh		
-    
-	.tagline
-		padding: 0 3vh
-		color: #111
-		letter-spacing: 0.1em
-		margin: 0 -0.1em 5vh 0
-		font-size: 16px
-		font-weight: 100
-		//margin-bottom: 10vh
-		width: 38%
-		
+		font:
+			size: 38px
+			weight: 300
+		color: #898989
+		margin-bottom: 5vh
 		+media-query($on-palm)
-			color: #111
+			font:
+				size: 28px
+			   
+	.tagline
+		color: #9F9F9F
+		letter-spacing: 0.1em
+		margin: 0.5em -0.1em 0.5em 0
+		-webkit-font-smoothing: subpixel-antialiased
+		font:
+			family: 'Source Sans Pro', sans-serif
+			size: 18px
+			weight: 200
+		width: 40%
+		+media-query($on-palm)
 			width: 90%
+			font-size: 16px
 		
 .icon-nav
 	list-style: none
 	margin: 5vh 0 5vh 0
-
 	a
 		color: #A19D9D
 		margin-left: 0
+		+transition()
 		
 		&:hover
-			color: #111
+			color: $accent-color
 	li
 		display: inline-block
 		
@@ -124,9 +117,10 @@
 			margin-left: 3vh
 
 .header-guide-down
-	margin: 5vh 0 3vh 0
-	padding-bottom: 5vh
-		
-		
-		
+	+animation-delay(5s)
+	padding: 20px
+	color: $grey-color
+	+transition()
 	
+	&:hover
+		color: $accent-color
