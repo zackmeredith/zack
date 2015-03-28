@@ -6,7 +6,10 @@ p
 		family: 'Open Sans', sans-serif
 	line-height: 1.5
 	text-align: left
-	padding: $spacing-unit/2 $spacing-unit
+	padding: $spacing-unit/4 $spacing-unit
+	
+	+media-query($on-palm)
+		padding: $spacing-unit/4 $spacing-unit/2
 	
 .section-heading
 	font:

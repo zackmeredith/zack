@@ -3150,7 +3150,12 @@ p {
   font-family: "Open Sans", sans-serif;
   line-height: 1.5;
   text-align: left;
-  padding: 15px 30px;
+  padding: 7.5px 30px;
+}
+@media screen and (max-width: 600px) {
+  p {
+    padding: 7.5px 15px;
+  }
 }
 
 .section-heading {
@@ -3823,6 +3828,11 @@ p {
 }
 .about-container .button {
   margin-left: 30px;
+}
+@media screen and (max-width: 600px) {
+  .about-container .button {
+    margin-left: 15px;
+  }
 }
 
 .center-heading {
