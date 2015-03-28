@@ -6,6 +6,8 @@
   <body>
 
     {% include header.html %}
+    
+    <div class="wrapper">
      {% include about.html %}
 	
 <!-- 	{% include about.html %} -->
@@ -15,7 +17,8 @@
         {{ content }}
       </div>
     </div>
-
+ {% include form.html %}
+    </div>
     {% include footer.html %}
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>	
