@@ -3807,7 +3807,7 @@ p {
   color: #898989;
   margin-bottom: 5vh;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   .words-container h2 {
     font-size: 28px;
   }
@@ -3822,9 +3822,14 @@ p {
   font-weight: 200;
   width: 40%;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .words-container .tagline {
     width: 90%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .words-container .tagline {
+    width: 60%;
     font-size: 16px;
   }
 }
