@@ -3849,6 +3849,7 @@ form textarea {
 }
 form input, form textarea {
   border: 2px solid #e8e8e8;
+  border-radius: 0;
   width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
