@@ -3092,7 +3092,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
-  color: #2E2D33;
+  color: #828282;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%;
 }
@@ -3154,7 +3154,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #2E2D33;
+  color: #828282;
 }
 
 /**
@@ -3807,7 +3807,7 @@ p {
   color: #898989;
   margin-bottom: 5vh;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .words-container h2 {
     font-size: 28px;
   }
@@ -3822,7 +3822,7 @@ p {
   font-weight: 200;
   width: 40%;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .words-container .tagline {
     width: 90%;
     font-size: 16px;
