@@ -221,6 +221,100 @@ td, th {
   font-weight: 400;
   src: local("Lato Regular"), local("Lato-Regular"), url(http://fonts.gstatic.com/s/lato/v11/1EqTbJWOZQBfhZ0e3RL9uvesZW2xOQ-xsNqO47m55DA.ttf) format("truetype");
 }
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.short-fade {
+  -webkit-animation-duration: 0.7s;
+  -moz-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.long-fade {
+  -webkit-animation-duration: 0.7s;
+  -moz-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+@-webkit-keyframes downArrow {
+  0% {
+    -webkit-transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(0.3em);
+  }
+}
+@-moz-keyframes downArrow {
+  0% {
+    -moz-transform: translateY(0);
+  }
+  100% {
+    -moz-transform: translateY(0.3em);
+  }
+}
+@keyframes downArrow {
+  0% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(0.3em);
+    -moz-transform: translateY(0.3em);
+    -ms-transform: translateY(0.3em);
+    -o-transform: translateY(0.3em);
+    transform: translateY(0.3em);
+  }
+}
+.arrow-fade-bounce {
+  opacity: 0;
+  -webkit-animation: fadeIn 0.7s 5s ease-in 1, downArrow 1.5s infinite alternate ease-in-out;
+  -moz-animation: fadeIn 0.7s 5s ease-in 1, downArrow 1.5s infinite alternate ease-in-out;
+  animation: fadeIn 0.7s 5s ease-in 1, downArrow 1.5s infinite alternate ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
 /*!
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license - http://opensource.org/licenses/MIT
@@ -3670,57 +3764,6 @@ p {
   color: #48D1CC;
 }
 
-.fade-in {
-  opacity: 0;
-  -webkit-animation: fadeIn ease-in 1;
-  -moz-animation: fadeIn ease-in 1;
-  animation: fadeIn ease-in 1;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-moz-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.short-fade {
-  -webkit-animation-duration: 0.7s;
-  -moz-animation-duration: 0.7s;
-  animation-duration: 0.7s;
-  -webkit-animation-delay: 1s;
-  -moz-animation-delay: 1s;
-  animation-delay: 1s;
-}
-
-.long-fade {
-  -webkit-animation-duration: 0.7s;
-  -moz-animation-duration: 0.7s;
-  animation-duration: 0.7s;
-  -webkit-animation-delay: 3s;
-  -moz-animation-delay: 3s;
-  animation-delay: 3s;
-}
-
 .words-container {
   display: -webkit-box;
   display: -moz-box;
@@ -3807,9 +3850,6 @@ p {
 }
 
 .header-guide-down {
-  -webkit-animation-delay: 5s;
-  -moz-animation-delay: 5s;
-  animation-delay: 5s;
   padding: 20px;
   color: #828282;
   -webkit-transition: all 0.15s ease-out 0s;

@@ -48,23 +48,6 @@
 				
 		&:hover
 			color: $accent-color
-
-.fade-in
-	opacity: 0
-	+animation(fadeIn ease-in 1)
-	+animation-fill-mode(forwards)
-	+keyframes(fadeIn)
-		from
-			opacity: 0
-		to
-			opacity: 1	
-	
-.short-fade
-	+animation-duration(0.7s)
-	+animation-delay(1s)
-.long-fade
-	+animation-duration(0.7s)
-	+animation-delay(3s)
 	
 .words-container
 	+display(flex)
@@ -115,10 +98,8 @@
 			margin-left: 3vh
 
 .header-guide-down
-	+animation-delay(5s)
 	padding: 20px
 	color: $grey-color
 	+transition()
-	
 	&:hover
 		color: $accent-color
