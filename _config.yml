@@ -23,4 +23,4 @@ exclude: ['design.sketch']
 
 #Plugins
 
-gems:      [jekyll-assets, autoprefixer-rails, jekyll-sass]
+gems:      [jekyll-assets, autoprefixer-rails]

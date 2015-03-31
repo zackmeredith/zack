@@ -1,13 +1,8 @@
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 
-a:hover, a:focus {
-	color: #e75854;
-}
-
 .morph-section {
-	padding: 2em;
-	text-align: justify;
+	padding: $spacing-unit/3;
 	max-width: 800px;
 	margin: 0 auto;
 	clear: both;
@@ -18,7 +13,7 @@ a:hover, a:focus {
 .morph-button {
 	position: relative;
 	display: block;
-	margin: 0 auto;
+	
 }
 
 .morph-button > button {
@@ -29,8 +24,9 @@ a:hover, a:focus {
 	color: white;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+	font-size: 75%;
 	font-weight: 700;
-	line-height: 80px;
+	line-height: 40px;
 	overflow: hidden;
 }
 
@@ -49,8 +45,8 @@ a:hover, a:focus {
 /* Common styles for overlay and modal type (fixed morph) */
 .morph-button-fixed,
 .morph-button-fixed .morph-content {
-	width: 300px;
-	height: 80px;
+	width: 150px;
+	height: 40px;
 }
 
 .morph-button-fixed > button {
@@ -88,7 +84,7 @@ a:hover, a:focus {
 	visibility: visible;
 	height: auto;
 	opacity: 1;
-	@include transition(opacity 0.3s 0.5s);
+	transition: opacity 0.3s 0.5s;
 }
 
 .morph-button-fixed.active > button {
@@ -102,17 +98,17 @@ a:hover, a:focus {
 /* Transitions for overlay button and sidebar button */
 .morph-button-overlay .morph-content,
 .morph-button-sidebar .morph-content {
-	@include transition(opacity 0.3s 0.5s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s);
+	transition: opacity 0.3s 0.5s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s;
 }
 
 .morph-button-overlay.open .morph-content,
 .morph-button-sidebar.open .morph-content {
-	@include transition(width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s);	
+	transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s;	
 }
 
 /* Morph Button Style: Overlay */
 .morph-button.morph-button-overlay {
-	margin: 50px auto;
+	margin: 30px auto;
 }
 
 .morph-button-overlay .morph-content {
@@ -133,7 +129,7 @@ a:hover, a:focus {
 .morph-button .morph-content,
 .morph-button.open .morph-content,
  {
-	@include transition-timing-function(cubic-bezier(0.7,0,0.3,1));
+	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 }
 
 /* Helper classes */
@@ -178,7 +174,6 @@ a:hover, a:focus {
 
 
 .no-transition {
-	-webkit-transition: none !important;
 	transition: none !important;
 }
 
@@ -189,8 +184,8 @@ a:hover, a:focus {
 @media screen and (max-width: 400px) {
 	.morph-button-fixed,
 	.morph-button-fixed .morph-content {
-		width: 200px;
-		height: 80px;
+		//width: 200px;
+		//height: 80px;
 	}
 
 	.morph-button-fixed > button {
@@ -260,7 +255,6 @@ a:hover, a:focus {
 	margin: 0 auto;
 	padding: 10px 0;
 	max-width: 700px;
-	text-align: justify;
 	font-weight: 300;
 	font-size: 1.5em;
 }
