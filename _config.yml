@@ -12,6 +12,7 @@ port: 4000
 
 # Build settings
 markdown: kramdown
+permalink: pretty
 
 sass:
   sass_dir: assets/css
@@ -19,3 +20,7 @@ sass:
 
 include: ['_includes/work']
 exclude: ['design.sketch']
+
+#Plugins
+
+gems:      [jekyll-assets, autoprefixer-rails, jekyll-sass]
