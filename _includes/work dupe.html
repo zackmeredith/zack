@@ -1,0 +1,25 @@
+<div id="work" class="work-container">
+<div class="wrapper wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">	
+
+<!--   <h1 class="page-heading">Posts</h1> -->
+<h3 class="section-heading">Work</h3>
+  <ul class="post-list work-grid">
+    {% for post in site.posts %}
+      <li class="work-item">
+	  	<div class="post-container">
+<!--         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> -->
+		
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><h3 class="post-header">{{ post.title }}</h3>
+       
+        <img class="post-img" src="{{ post.featured-image }}" /></a>
+        
+<!--         {{ post.excerpt }} -->
+<!-- 		<div class="overlay" -->
+<!-- 	  	</div> -->
+	  	</div>
+      </li>
+      
+    {% endfor %}
+  </ul>
+</div>
+</div>
