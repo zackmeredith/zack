@@ -2,15 +2,11 @@
 title: NOBS Website Redesign
 ---
 
-This project was attempt to create a new, modern look for the New Orleans Bike & Board Shop. The original site had text that was incredibly hard to read and a carousel setup that offered little information without the user clicking through or waiting.
-
-<img class="post-pic-body" src="{{ site.baseurl }}/assets/img/nobs-og.png" alt="NOBS Original">
-
-
-This homepage revision attempted to offer the user all the original information and more in an easier and more accessible way. 
-
 <img class="post-pic-body" src="{{ site.baseurl }}/assets/img/nobs.png" alt="NOBS New Website Design">
 
+This project was attempt to create a new, modern look for the New Orleans Bike & Board Shop. The original site had text that was incredibly hard to read and a carousel setup that offered little information without the user clicking through or waiting.
+
+This homepage revision attempted to offer the user all the original information and more in an easier and more accessible way. 
 
 <img class="post-pic-body" src="{{ site.baseurl }}/assets/img/nobs-belowfold.png" alt="NOBS New Website Below the Fold">
 
