@@ -23,7 +23,6 @@ body {
 }
 
 
-
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
@@ -35,7 +34,6 @@ ul, ol, dl, figure,
 }
 
 
-
 /**
  * Images
  */
@@ -43,7 +41,6 @@ img {
     max-width: 100%;
     vertical-align: middle;
 }
-
 
 
 /**
@@ -56,7 +53,6 @@ figure > img {
 figcaption {
     font-size: $small-font-size;
 }
-
 
 
 /**
@@ -116,7 +112,6 @@ blockquote {
 }
 
 
-
 /**
  * Code formatting
  */
@@ -144,7 +139,6 @@ pre {
 }
 
 
-
 /**
  * Wrapper
  */
@@ -153,8 +147,8 @@ pre {
     max-width:         calc(#{$content-width} - (#{$spacing-unit}));
     margin-right: auto;
     margin-left: auto;
-    //padding-right: $spacing-unit;
-    //padding-left: $spacing-unit;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
     @extend %clearfix;
 
     @include media-query($on-laptop) {

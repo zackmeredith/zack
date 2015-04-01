@@ -25,7 +25,6 @@ function smoothScroll (duration) {
 	});
 }
 
-
 function workBelt() {
   
   $(".trigger").remove();
