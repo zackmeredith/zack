@@ -138,6 +138,7 @@
 
 .morph-button-overlay.scroll .morph-content {
 	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
 }
 
 
