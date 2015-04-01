@@ -253,7 +253,6 @@
 
 .content-style-overlay p {
 	margin: 0 auto;
-	padding-right: 0;
 	max-width: 700px;
 	font-weight: 300;
 	font-size: 1.5em;
@@ -275,7 +274,12 @@
 	.content-style-overlay {
 		font-size: 75%;
 		padding: 100px 20px;
+		
 	}
+	
+	.content-style-overlay p {
+			padding: 0;
+		}
 
 	.content-style-overlay .icon-close {
 		top: 15px;
