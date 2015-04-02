@@ -5,6 +5,7 @@
 	max-width: 800px;
 	margin: 0 auto;
 	clear: both;
+
 }
 
 /* Morph Button: Default Styles */
@@ -112,7 +113,7 @@
 
 .morph-button-overlay .morph-content {
 	overflow: hidden;
-	background: #FEFEFE;
+	background: white;
 }
 
 .morph-button-overlay.open .morph-content {
