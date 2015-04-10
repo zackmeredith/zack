@@ -256,7 +256,7 @@
 	margin: 0 auto;
 	max-width: 700px;
 	font-weight: 300;
-	font-size: 1.5em;
+	font-size: 1.25em;
 }
 
 .content-style-overlay .icon-close {
@@ -273,14 +273,16 @@
 
 @media screen and (max-width: 770px) {
 	.content-style-overlay {
-		font-size: 75%;
+		font-size: 85%;
 		padding: 100px 20px;
 		
 	}
 	
+/*
 	.content-style-overlay p {
 			padding: 0;
 		}
+*/
 
 	.content-style-overlay .icon-close {
 		top: 15px;
