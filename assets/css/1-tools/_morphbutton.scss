@@ -1,7 +1,7 @@
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 .morph-section {
-	padding: $spacing-unit/3;
+	padding: $spacing-unit/2 $spacing-unit/3;
 	max-width: 800px;
 	margin: 0 auto;
 	clear: both;
