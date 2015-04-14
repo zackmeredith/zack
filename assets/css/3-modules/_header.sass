@@ -3,6 +3,7 @@
 	height: 100vh
 	min-height: 100%
 	width: 100%
+	font-family: 'Lato', sans-serif
 
 .top-bar
 	+align-self(flex-start)
@@ -19,8 +20,6 @@
 		margin-left: 2vw
 	
 	.logo-text
-		font-family: 'Lato', sans-serif
-		-webkit-font-smoothing: subpixel-antialiased
 		font:
 			weight: 100
 			size: 24px
@@ -29,10 +28,9 @@
 
 .site-nav     
 	+media-query($on-palm)
-		display: none
-			
+		display: none			
 	a
-		display: inline-block
+		display: inline-block	
 		
 		&:not(:first-child) 
 			margin-left: 2vw		
@@ -40,10 +38,8 @@
 	h4 
 		text-transform: uppercase
 		font:
-			family: 'Lato', sans-serif
-			weight: 300
 			size: 16px
-		color: $grey-color
+		color: $grey-color-light
 		+transition()
 				
 		&:hover
@@ -61,9 +57,7 @@
 	h2
 		font:
 			size: 38px
-			weight: 300
 		color: $grey-color-dark
-		-webkit-font-smoothing: subpixel-antialiased
 		margin-bottom: 5vh
 		+media-query($on-tablet)
 			font:

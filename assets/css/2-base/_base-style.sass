@@ -1,11 +1,11 @@
 p
-	color: $grey-color-light
+	color: $grey-color
+	text-align: left
 	font:
 		size: 18px
 		weight: 300
 		family: 'Open Sans', sans-serif
 	line-height: 2
-	text-align: left
 	padding: $spacing-unit/3 $spacing-unit
 	
 	+media-query($on-palm)
@@ -15,9 +15,7 @@ p
 .section-heading
 	font:
 		size: 28px
-		weight: 300
 	color: $accent-color
-	//color: $grey-color-dark
 	padding: 50px $spacing-unit 10px $spacing-unit
 	text-align: center
 	
@@ -33,22 +31,3 @@ p
 	background: $bg-color
 	padding-bottom: 50px
 	margin-bottom: $spacing-unit
-
-
-.button
-	border-color: $grey-color-light
-	color: #111
-	display: inline-block
-	font:
-		family: 'Lato', sans-serif
-		weight: 300
-		size: 16px
-	text-decoration: inherit
-	border: 1px solid
-	padding: 5px 30px
-	margin: 12px 0px 15px 0px
-	
-	&:hover
-		+transition(200ms ease-in)
-		background-color: $accent-color
-		color: white

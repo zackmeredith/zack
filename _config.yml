@@ -15,7 +15,7 @@ permalink: pretty
 
 sass:
   sass_dir: assets/css
-  style: :nested
+  style: :compressed
 
 include: ['_includes/work']
 exclude: ['design.sketch']
