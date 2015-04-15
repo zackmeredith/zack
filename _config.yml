@@ -22,4 +22,4 @@ exclude: ['design.sketch']
 
 #Plugins
 
-gems:      [jekyll-assets, autoprefixer-rails]
+gems:      [jekyll-assets, autoprefixer-rails, octopress-minify-html]

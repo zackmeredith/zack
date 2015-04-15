@@ -26,6 +26,8 @@
 	letter-spacing: 1px;
 	font-size: 75%;
 	font-weight: 700;
+	font-family: 'Open Sans', sans serif;
+	cursor: pointer;
 	line-height: 40px;
 	overflow: hidden;
 }
@@ -255,6 +257,7 @@
 .content-style-overlay p {
 	margin: 0 auto;
 	max-width: 725px;
+	line-height: 1.8;
 	font-weight: 300;
 	font-size: 1.2em;
 }
