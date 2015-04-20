@@ -107,16 +107,23 @@ a {
  * Blockquotes
  */
 blockquote {
-    color: $grey-color;
+    color: $grey-color-light;
     border-left: 4px solid $accent-color;
-    padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
-    font-style: italic;
-
+    padding-left: $spacing-unit;
+    font-size: 22px;
+    line-height: 1.5;
+    text-align: left;
+    
+     @include media-query($on-palm){
+	     font-size: 20px;
+	     text-align: center;
+     }
+    
     > :last-child {
         margin-bottom: 0;
     }
+
+    
 }
 
 
