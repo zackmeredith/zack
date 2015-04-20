@@ -116,7 +116,6 @@ blockquote {
     
      @include media-query($on-palm){
 	     font-size: 20px;
-	     text-align: center;
      }
     
     > :last-child {
