@@ -17,3 +17,5 @@ The color palette was to be determined after further discussion with the client.
 All of that being said, the client decided that they wanted to work towards an e-commerce site instead of one that focused on displaying what they had in a more crafted way. 
 
 What that means: This homepage won't be used for the shop and will instead be replaced by one that focuses more on a comfortable and engaging user experience for online shopping.
+
+A live version of the homepage design can be found [here](http://zacharymeredith.com/nobs/# "NOBS Homepage Redesign").
