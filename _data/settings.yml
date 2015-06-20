@@ -24,3 +24,7 @@ google-analytics-ua: UA-61450131-1
 projects:
 - {name: NOBS Website Redesign, folder: 'proj-1', file: 'work/proj-1.html'}
 - {name: My Site, folder: 'proj-2', file: 'work/proj-2.html'}
+- {name: Terrance Simien & the Zydeco Experience, folder: 'proj-3', file: 'work/proj-3.html'}
+- {name: Learning Sketch, folder: 'proj-4', file: 'work/proj-4.html'}
+
+

@@ -45,7 +45,7 @@ function workBelt() {
 
 function  workLoad() {
   
-  $.ajaxSetup({ cache: true });
+  $.ajaxSetup({ cache: false });
   
   $('.thumb-container label').click(function() {
     var $this = $(this),
