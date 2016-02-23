@@ -34,17 +34,17 @@ $projects: {% for project in site.data.settings.projects %} "{{ project.folder }
 $animation: "fadeIn"
 
 // Using media queries with like this:
-// @include media-query($on-palm) 
-//     .wrapper 
+// @include media-query($on-palm)
+//     .wrapper
 //         padding-right: $spacing-unit / 2
 //         padding-left: $spacing-unit / 2
-//     
+//
 //
 
 =media-query($device)
   @media screen and (max-width: $device)
     @content
- 
+
 // Import partials
 
 @import '2-base/base-index'

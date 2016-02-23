@@ -9,14 +9,17 @@
   <input type="radio" name="trigger" id="return" class="return" />
 
   <div class="work-belt">
-    
+
     <div class="thumb-wrap">
       <div class="thumb-container">
       {% for project in site.data.settings.projects %}
-      <label for="{{ project.folder }}">  
+      <label for="{{ project.folder }}">
         <div class="thumb-unit" data-folder="{{ project.folder }}">
           <img src="assets/img/work/{{project.folder}}/thumb.jpg" alt="{{ project.name }}" />
-        </div> 
+          <!-- <div class="" style="background-image: url(assets/img/work/{{project.folder}}/thumb.jpg); background-position: center; background-size: cover; height: 400px; width: 600px;">
+
+          </div> -->
+        </div>
         <div class="thumb-overlay">
           <strong>{{ project.name }}</strong>
         </div>
@@ -24,7 +27,7 @@
       {% endfor %}
     </div>
     </div>
-    
+
     <div class="work-wrap">
       <div class="work-container">
       <label for="return">
@@ -46,7 +49,11 @@
 
     </div>
     </div>
-    
+
   </div>
+
+
   </div>
+    <span style="display: block; text-align: center; padding: 30px;">(Case studies and updated projects coming soon)</span>
+
 </section>

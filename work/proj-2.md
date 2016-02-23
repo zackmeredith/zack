@@ -1,9 +1,9 @@
 ---
-title: My Site
+title: Terrance Simien & the Zydeco Experience
 ---
 
-![My Site]({{ site.baseurl }}/assets/img/work/proj-2/self.png)
+(IN PROGRESS)
 
-I set out to design a new personal site that was incredibly simple, but also easy to use. I wanted to show all of my content, but stick to a one page layout. To do this I implemented a morphing button concept in the about section inspired by the wonderful [Codrops](http://tympanus.net/codrops/ "Codrops") & a sliding 'belt' in the work section inspired by the great [DevTips](https://youtube.com/user/DevTipsForDesigners "DevTips").
+A work in progress Wordpress site redesign for Terrance Simien & the Zydeco Experience.
 
-I tried to establish a casual tone that was inviting & not intimidating.
+<img class="post-pic-body" src="{{ site.baseurl }}/assets/img/work/proj-2/img1.png" alt="Terrance Simien Redesign">

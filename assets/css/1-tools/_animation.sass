@@ -7,14 +7,14 @@
 	opacity: 0
 	+animation(fadeIn 0.5s ease-in 1)
 	+animation-fill-mode(forwards)
-		
+
 .short-fade
-	+animation-duration(0.5s)
-	+animation-delay(1s)
+	+animation-duration(0.3s)
+	+animation-delay(0.5s)
 .long-fade
 	+animation-duration(0.5s)
-	+animation-delay(3s)
-	
+	+animation-delay(2s)
+
 +keyframes(downArrow)
 	0%
 		+transform(translateY(0))
@@ -23,5 +23,5 @@
 
 .arrow-fade-bounce
 	opacity: 0
-	+animation(fadeIn 0.7s 5s ease-in 1, downArrow 1.5s infinite alternate ease-in-out)
+	+animation(fadeIn 0.7s 3s ease-in 1, downArrow 1.5s infinite alternate ease-in-out)
 	+animation-fill-mode(forwards)
