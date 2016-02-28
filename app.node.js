@@ -517,8 +517,8 @@ module.exports =
           { className: 'Navigation-item' },
           _react2['default'].createElement(
             'a',
-            { className: 'Navigation-link', href: '/work', onClick: _Link2['default'].handleClick },
-            'Work'
+            { className: 'Navigation-link', href: '/about', onClick: _Link2['default'].handleClick },
+            'About'
           )
         ),
         _react2['default'].createElement(
@@ -526,8 +526,8 @@ module.exports =
           { className: 'Navigation-item' },
           _react2['default'].createElement(
             'a',
-            { className: 'Navigation-link', href: '/about', onClick: _Link2['default'].handleClick },
-            'About'
+            { className: 'Navigation-link', href: '/work', onClick: _Link2['default'].handleClick },
+            'Work'
           )
         )
       )
@@ -719,14 +719,99 @@ module.exports =
               "h1",
               { className: "heading--name" },
               "About"
-            ),
-            _react2["default"].createElement(
-              "p",
-              null,
-              "Coming soon."
             )
           ),
-          _react2["default"].createElement("div", { className: "wip" })
+          _react2["default"].createElement("div", { className: "wip" }),
+          _react2["default"].createElement(
+            "div",
+            { className: "grid fadeIn" },
+            _react2["default"].createElement(
+              "div",
+              { className: "grid__row" },
+              _react2["default"].createElement(
+                "div",
+                { className: "grid__item grid__item--half " },
+                _react2["default"].createElement(
+                  "h3",
+                  null,
+                  "Hey"
+                ),
+                _react2["default"].createElement(
+                  "p",
+                  null,
+                  "I'm Zack."
+                ),
+                _react2["default"].createElement(
+                  "p",
+                  null,
+                  "I'm a designer and front-end developer trying to make useful things in New Orleans, La. When I'm not at my computer I'm usually ",
+                  _react2["default"].createElement(
+                    "a",
+                    { href: "", className: "txt-link" },
+                    "playing guitar"
+                  ),
+                  " or riding my bike."
+                )
+              ),
+              _react2["default"].createElement(
+                "div",
+                { className: "grid__item grid__item--half" },
+                _react2["default"].createElement("div", { className: "grid__item__image bg-self" })
+              )
+            ),
+            _react2["default"].createElement(
+              "div",
+              { className: "grid__row" },
+              _react2["default"].createElement(
+                "div",
+                { className: "grid__item grid__item--one-third sm-right" },
+                _react2["default"].createElement("div", { className: "wip sm-show" }),
+                _react2["default"].createElement(
+                  "p",
+                  null,
+                  "I'm obsessed with the intersection of functionality and beauty. I try to use this passion to contiously better myself so that I might craft things which have a positive effect on the lives of others."
+                )
+              ),
+              _react2["default"].createElement(
+                "div",
+                { className: "grid__item grid__item--two-thirds sm-left" },
+                _react2["default"].createElement("div", { className: "grid__item__image bg-comp" })
+              )
+            ),
+            _react2["default"].createElement(
+              "div",
+              { className: "grid__row" },
+              _react2["default"].createElement(
+                "div",
+                { className: "grid__item grid__item--half " },
+                _react2["default"].createElement("div", { className: "wip sm-show" }),
+                _react2["default"].createElement(
+                  "p",
+                  null,
+                  "My passion for music has allowed me to tour half the U.S. with my best friends and meet countless inpiring people."
+                ),
+                _react2["default"].createElement(
+                  "p",
+                  null,
+                  "These experiences not only exposed me to amazing creatives, but also to the importance of community building and cultivating relationships."
+                )
+              ),
+              _react2["default"].createElement(
+                "div",
+                { className: "grid__item grid__item--half" },
+                _react2["default"].createElement("div", { className: "grid__item__image bg-guit" })
+              )
+            ),
+            _react2["default"].createElement(
+              "div",
+              { className: "grid__row" },
+              _react2["default"].createElement(
+                "div",
+                { className: "grid__item grid__item--full" },
+                _react2["default"].createElement("div", { className: "grid__item__image bg-nl" })
+              )
+            )
+          )
         );
       }
     }]);
@@ -736,19 +821,14 @@ module.exports =
 
   exports["default"] = _default;
   module.exports = exports["default"];
-  /*<div className="grid">
-   <div className="grid__item--two-thirds">
-      <h3>Hey</h3>
-     <p>
-      </p>
-    </div>
-    <div className="grid__item--one-third bg-self">
-    </div>
-    <div className="grid__item--two-thirds bg-guit">
-      </div>
-    <div className="grid__item--one-third ">
-    </div>
-  </div>*/
+  /*<div className="grid__row">
+   <div className="grid__item grid__item--half ">
+     <h3>Contact</h3>
+    <p>I'm a designer and front-end developer trying to make useful things in New Orleans, La. When I'm not at my computer I'm usually <a href="" className="txt-link">playing guitar</a> or riding my bike.</p>
+   </div>
+    <div className="grid__item grid__item--half">
+     </div>
+    </div>*/
 
 /***/ },
 /* 12 */
@@ -1173,7 +1253,7 @@ module.exports =
                 'I’m always interested in working on new projects and would love to hear about yours. ',
                 _react2['default'].createElement(
                   'a',
-                  { className: 'mail-link', href: 'mailto:zacharybmeredith@gmail.com?subject=YOUR%20SUBJECT%20-%20' },
+                  { className: 'txt-link', href: 'mailto:zacharybmeredith@gmail.com?subject=YOUR%20SUBJECT%20-%20' },
                   'Email me'
                 ),
                 ' if you would like to work together.'
@@ -1486,7 +1566,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.heading {\n  font-weight: 300;\n}\n\n.heading--name {\n  font-weight: 600;\n}\n\nhtml, body {\n  margin: 0;\n  padding: 0;\n  background-color: #efefef;\n  color: #333;\n  font-family: 'Proxima Nova',-apple-system,\".SFNSUI-Regular\",HelveticaNeue,sans-serif;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  font-size: 16px;\n  height: 100%;\n}\n\n#app {\n  min-height: 100%;\n\n}\n\n.Layout {\n  // height: 100%;\n  min-height: 100%;\n\n}\n\n\n.container  {\n  margin: 0 auto;\n  max-width: 1060px;\n  padding: 1.25rem;\n  background-color: white;\n  min-height: 100%\n}\n\n\n@media screen and (min-width: 50em) {\n\n  .container {\n    padding: 2rem 4rem 1rem;\n    //: 2rem;\n  }\n  }\n\n.section {\n\n\n}\n\n.section__title {\n  text-transform: uppercase;\n  font-size: 0.875rem;\n  letter-spacing: 0.075em;\n  //: 1.5rem;\n  color: #bfbfbf;\n  font-weight: 600;\n}\n\n.hr {\n}\n\n.hr--sm-bold {\n  height: 2px;\n  border: none;\n  outline: none;\n  width: 3rem;\n  margin-left: 0;\n  background-color: #333;\n}\n\n.job__wrapper {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-flex-wrap: wrap;\n      -ms-flex-wrap: wrap;\n          flex-wrap: wrap;\n}\n\n.job {\n  margin-bottom: 2rem\n}\n\n@media screen and (min-width: 50em) {\n\n  .job {\n    -webkit-flex-basis: calc(50% - 1rem);\n        -ms-flex-preferred-size: calc(50% - 1rem);\n            flex-basis: calc(50% - 1rem);\n    margin-bottom: 2rem;\n  }\n\n  .job:nth-child(odd) {\n    padding-right: 1rem;\n  }\n\n  .job:nth-child(even) {\n    padding-left: 1rem;\n  }\n    }\n\n.job__company {\n  font-weight: 600;\n  margin-bottom: 0.25em;\n  font-size: 1rem;\n  color: #393633;\n}\n\n.job__position {\n  //: #798693;\n  color: #5F5F5F;\n  font-size: 0.75rem;\n  text-transform: uppercase;\n  letter-spacing: 0.025em;\n}\n\n.job__duration {\n  text-transform: uppercase;\n  font-size: 0.75rem;\n  color: #bfbfbf;\n}\n\n.job__summary {\n  margin-bottom: 2rem;\n}\n\n.heading {\n  line-height: 1.5;\n  display: block;\n  max-width: 560px;\n  font-weight: 300;\n}\n\n.social-list {\n\n  list-style: none;\n  padding-left: 0\n}\n\n.social-list__item {\n  display: inline-block;\n}\n\n.social-list__item i {\n  font-size: 1.25rem;\n  color: #333;\n  -webkit-transition: 0.2s ease-in-out;\n  -o-transition: 0.2s ease-in-out;\n  transition: 0.2s ease-in-out;\n}\n\n.social-list__item i:hover {\n  color: #bfbfbf;\n}\n\n.social-list__item:not(last-child) {\n  padding-right: 1.5rem;\n}\n\n\n.work {\n  padding: 2rem 0;\n}\n\n\n.btn {\n  border: 1px solid #AACFD0;\n  padding: 0.5rem 1.5rem;\n  text-decoration: none;\n  color: #AACFD0;\n  font-size: 0.875rem;\n  text-align: center;\n  border-radius: 2rem\n}\n\n\n.btn:hover {\n  background-color: #AACFD0;\n  color: white;\n}\n\n.center {\n  text-align: center;\n}\n\np {\n  line-height: 1.5;\n  color: #5F5F5F;\n}\n\n\n.intro {\n  padding: 3rem 0 1rem;\n}\n\n.wip {\n  height: 0.5rem;\n  background: #AACFD0;\n\n}\n\n\n.half-section__wrapper {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-flex-wrap: wrap;\n      -ms-flex-wrap: wrap;\n          flex-wrap: wrap;\n}\n\n.half-section {\n}\n\n@media screen and (min-width: 50em) {\n\n  .half-section {\n    -webkit-flex-basis: calc(50% - 1rem);\n        -ms-flex-preferred-size: calc(50% - 1rem);\n            flex-basis: calc(50% - 1rem);\n    max-width: calc(50% - 1rem);\n  }\n\n  .half-section:nth-child(odd) {\n    padding-right: 1rem;\n  }\n\n  .half-section:nth-child(even) {\n    padding-left: 1rem;\n  }\n  }\n\n.mail-link {\n  // display: inline-block;\n  color: #bfbfbf;\n  text-decoration: none;\n  padding-bottom: 0.25rem;\n  border-bottom: 1px solid;\n  -webkit-transition: 0.2s ease-in-out;\n  -o-transition: 0.2s ease-in-out;\n  transition: 0.2s ease-in-out\n}\n\n.mail-link:hover {\n  color: #333;\n}\n\n.content-wrapper {\n  margin-bottom: 3rem\n}\n\n@media screen and (min-width: 50em) {\n\n  .content-wrapper {\n    margin-bottom: 5rem;\n  }\n    }\n\n\n.fadeInSlideUp {\n  -webkit-animation: slideUp 1.5s, fadeIn 1.75s;\n       -o-animation: slideUp 1.5s, fadeIn 1.75s;\n          animation: slideUp 1.5s, fadeIn 1.75s;\n  will-change: transform, opacity;\n}\n\n.fadeIn {\n  -webkit-animation: fadeIn 2s;\n       -o-animation: fadeIn 2s;\n          animation: fadeIn 2s;\n  will-change: opacity;\n}\n\n.wip {\n  -webkit-animation: fadeIn 1.5s;\n       -o-animation: fadeIn 1.5s;\n          animation: fadeIn 1.5s;\n  will-change: opacity;\n}\n\n@-webkit-keyframes slideUp {\n  0% {\n    -webkit-transform: translateY(15%);\n            transform: translateY(15%);\n  }\n  100% {\n    -webkit-transform: translateY(0);\n            transform: translateY(0);\n  }\n}\n\n@-o-keyframes slideUp {\n  0% {\n    -o-transform: translateY(15%);\n       transform: translateY(15%);\n  }\n  100% {\n    -o-transform: translateY(0);\n       transform: translateY(0);\n  }\n}\n\n@keyframes slideUp {\n  0% {\n    -webkit-transform: translateY(15%);\n         -o-transform: translateY(15%);\n            transform: translateY(15%);\n  }\n  100% {\n    -webkit-transform: translateY(0);\n         -o-transform: translateY(0);\n            transform: translateY(0);\n  }\n}\n\n@-webkit-keyframes slideRight {\n  0% {\n    -webkit-transform: translateX(5%);\n            transform: translateX(5%);\n  }\n  100% {\n    -webkit-transform: translateX(0);\n            transform: translateX(0);\n  }\n}\n\n@-o-keyframes slideRight {\n  0% {\n    -o-transform: translateX(5%);\n       transform: translateX(5%);\n  }\n  100% {\n    -o-transform: translateX(0);\n       transform: translateX(0);\n  }\n}\n\n@keyframes slideRight {\n  0% {\n    -webkit-transform: translateX(5%);\n         -o-transform: translateX(5%);\n            transform: translateX(5%);\n  }\n  100% {\n    -webkit-transform: translateX(0);\n         -o-transform: translateX(0);\n            transform: translateX(0);\n  }\n}\n\n@-webkit-keyframes fadeIn {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n\n@-o-keyframes fadeIn {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n\n@keyframes fadeIn {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.grid {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-flex-wrap: wrap;\n      -ms-flex-wrap: wrap;\n          flex-wrap: wrap\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.grid__item {\n\n\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.grid__item--one-third {\n  //: calc(33%);\n  width: 33%;\n  height: 400px;\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.grid__item--one-third img {\n  width: 100%;\n  height: 100%;\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.grid__item--two-thirds {\n  width: 67%;\n  height: 400px;\n}\n\n.bg-self {\n  background: url(/self.jpg);\n  -webkit-background-size: cover;\n          background-size: cover;\n  background-position: center;\n}\n\n.bg-guit {\n  background: url(/guit.jpg);\n  -webkit-background-size: cover;\n          background-size: cover;\n  background-position: center;\n}\n", ""]);
+  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.heading {\n  font-weight: 300;\n}\n\n.heading--name {\n  font-weight: 600;\n}\n\nhtml, body {\n  margin: 0;\n  padding: 0;\n  background-color: #efefef;\n  color: #333;\n  font-family: 'Proxima Nova',-apple-system,\".SFNSUI-Regular\",HelveticaNeue,sans-serif;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  font-size: 16px;\n  height: 100%;\n}\n\n#app {\n  min-height: 100%;\n\n}\n\n.Layout {\n  // height: 100%;\n  min-height: 100%;\n\n}\n\n\n.container  {\n  margin: 0 auto;\n  max-width: 1060px;\n  padding: 1.25rem;\n  background-color: white;\n  min-height: 100%\n}\n\n\n@media screen and (min-width: 50em) {\n\n  .container {\n    padding: 2rem 4rem 1rem;\n    //: 2rem;\n  }\n  }\n\n.section {\n\n\n}\n\n.section__title {\n  text-transform: uppercase;\n  font-size: 0.875rem;\n  letter-spacing: 0.075em;\n  //: 1.5rem;\n  color: #bfbfbf;\n  font-weight: 600;\n}\n\n.hr {\n}\n\n.hr--sm-bold {\n  height: 2px;\n  border: none;\n  outline: none;\n  width: 3rem;\n  margin-left: 0;\n  background-color: #333;\n}\n\n.job__wrapper {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-flex-wrap: wrap;\n      -ms-flex-wrap: wrap;\n          flex-wrap: wrap;\n}\n\n.job {\n  margin-bottom: 2rem\n}\n\n@media screen and (min-width: 50em) {\n\n  .job {\n    -webkit-flex-basis: calc(50% - 1rem);\n        -ms-flex-preferred-size: calc(50% - 1rem);\n            flex-basis: calc(50% - 1rem);\n    margin-bottom: 2rem;\n  }\n\n  .job:nth-child(odd) {\n    padding-right: 1rem;\n  }\n\n  .job:nth-child(even) {\n    padding-left: 1rem;\n  }\n    }\n\n.job__company {\n  font-weight: 600;\n  margin-bottom: 0.25em;\n  font-size: 1rem;\n  color: #393633;\n}\n\n.job__position {\n  //: #798693;\n  color: #5F5F5F;\n  font-size: 0.75rem;\n  text-transform: uppercase;\n  letter-spacing: 0.025em;\n}\n\n.job__duration {\n  text-transform: uppercase;\n  font-size: 0.75rem;\n  color: #bfbfbf;\n}\n\n.job__summary {\n  margin-bottom: 2rem;\n}\n\n.heading {\n  line-height: 1.5;\n  display: block;\n  max-width: 560px;\n  font-weight: 300;\n}\n\n.social-list {\n\n  list-style: none;\n  padding-left: 0;\n  padding: 0.5rem 0 0\n}\n\n.social-list__item {\n  display: inline-block;\n}\n\n.social-list__item i {\n  font-size: 1.25rem;\n  color: #333;\n  -webkit-transition: 0.2s ease-in-out;\n  -o-transition: 0.2s ease-in-out;\n  transition: 0.2s ease-in-out;\n}\n\n.social-list__item i:hover {\n  color: #bfbfbf;\n}\n\n.social-list__item:not(last-child) {\n  padding-right: 1.5rem;\n}\n\n\n.work {\n  padding: 2rem 0;\n}\n\n\n.btn {\n  border: 1px solid #AACFD0;\n  padding: 0.5rem 1.5rem;\n  text-decoration: none;\n  color: #AACFD0;\n  font-size: 0.875rem;\n  text-align: center;\n  border-radius: 2rem\n}\n\n\n.btn:hover {\n  background-color: #AACFD0;\n  color: white;\n}\n\n.center {\n  text-align: center;\n}\n\np {\n  line-height: 1.5;\n  color: #5F5F5F;\n}\n\n\n.intro {\n  padding: 3rem 0 0.5rem;\n}\n\n.wip {\n  height: 0.5rem;\n  background: #AACFD0;\n\n}\n\n\n.half-section__wrapper {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-flex-wrap: wrap;\n      -ms-flex-wrap: wrap;\n          flex-wrap: wrap;\n}\n\n.half-section {\n}\n\n@media screen and (min-width: 50em) {\n\n  .half-section {\n    -webkit-flex-basis: calc(50% - 1rem);\n        -ms-flex-preferred-size: calc(50% - 1rem);\n            flex-basis: calc(50% - 1rem);\n    max-width: calc(50% - 1rem);\n  }\n\n  .half-section:nth-child(odd) {\n    padding-right: 1rem;\n  }\n\n  .half-section:nth-child(even) {\n    padding-left: 1rem;\n  }\n  }\n\n.txt-link {\n  // display: inline-block;\n  color: #bfbfbf;\n  text-decoration: none;\n  padding-bottom: 0.25rem;\n  border-bottom: 1px solid;\n  -webkit-transition: 0.2s ease-in-out;\n  -o-transition: 0.2s ease-in-out;\n  transition: 0.2s ease-in-out\n}\n\n.txt-link:hover {\n  color: #333;\n}\n\n.content-wrapper {\n  margin-bottom: 3rem\n}\n\n@media screen and (min-width: 50em) {\n\n  .content-wrapper {\n    margin-bottom: 5rem;\n  }\n    }\n\n\n.fadeInSlideUp {\n  -webkit-animation: slideUp 1.5s, fadeIn 1.75s;\n       -o-animation: slideUp 1.5s, fadeIn 1.75s;\n          animation: slideUp 1.5s, fadeIn 1.75s;\n  will-change: transform, opacity;\n}\n\n.fadeIn {\n  -webkit-animation: fadeIn 2s;\n       -o-animation: fadeIn 2s;\n          animation: fadeIn 2s;\n  will-change: opacity;\n}\n\n.wip {\n  -webkit-animation: fadeIn 1.5s;\n       -o-animation: fadeIn 1.5s;\n          animation: fadeIn 1.5s;\n  will-change: opacity;\n}\n\n@-webkit-keyframes slideUp {\n  0% {\n    -webkit-transform: translateY(15%);\n            transform: translateY(15%);\n  }\n  100% {\n    -webkit-transform: translateY(0);\n            transform: translateY(0);\n  }\n}\n\n@-o-keyframes slideUp {\n  0% {\n    -o-transform: translateY(15%);\n       transform: translateY(15%);\n  }\n  100% {\n    -o-transform: translateY(0);\n       transform: translateY(0);\n  }\n}\n\n@keyframes slideUp {\n  0% {\n    -webkit-transform: translateY(15%);\n         -o-transform: translateY(15%);\n            transform: translateY(15%);\n  }\n  100% {\n    -webkit-transform: translateY(0);\n         -o-transform: translateY(0);\n            transform: translateY(0);\n  }\n}\n\n@-webkit-keyframes slideRight {\n  0% {\n    -webkit-transform: translateX(5%);\n            transform: translateX(5%);\n  }\n  100% {\n    -webkit-transform: translateX(0);\n            transform: translateX(0);\n  }\n}\n\n@-o-keyframes slideRight {\n  0% {\n    -o-transform: translateX(5%);\n       transform: translateX(5%);\n  }\n  100% {\n    -o-transform: translateX(0);\n       transform: translateX(0);\n  }\n}\n\n@keyframes slideRight {\n  0% {\n    -webkit-transform: translateX(5%);\n         -o-transform: translateX(5%);\n            transform: translateX(5%);\n  }\n  100% {\n    -webkit-transform: translateX(0);\n         -o-transform: translateX(0);\n            transform: translateX(0);\n  }\n}\n\n@-webkit-keyframes fadeIn {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n\n@-o-keyframes fadeIn {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n\n@keyframes fadeIn {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.grid {\n  padding: 0.5rem 0\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.grid__row {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-flex-wrap: wrap;\n      -ms-flex-wrap: wrap;\n          flex-wrap: wrap;\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.grid__item {\n  width: 100%;\n  padding: 0.5rem 0;\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.grid__item__image {\n  -webkit-background-size: cover;\n          background-size: cover;\n  background-position: center center;\n  min-height: 200px;\n  height: 100%;\n  width: 100%;\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n@media screen and (min-width: 50em) {\n\n  .grid__item {\n\n\n}\n\n  .grid__item:nth-child(even) {\n    padding: 0.5rem 0 0.5rem 1rem;\n  }\n\n  .grid__item:nth-child(odd) {\n    padding: 0.5rem 1rem 0.5rem 0;\n  }\n\n  .grid__item--one-third {\n    //: calc(33%);\n    width: calc(33% - 1rem);\n    height: 360px;\n  }\n\n  .grid__item--two-thirds {\n    width: calc(67% - 1rem);\n    height: 360px;\n  }\n\n  .grid__item--half {\n    width: calc(50% - 1rem);\n    height: 360px;\n  }\n\n  .grid__item--full {\n    width: 100%;\n    height: 360px;\n    padding: 0.5rem 0 !important;\n  }\n}\n\n.bg-self {\n  background-image: url(/img/self.jpg);\n  background-position: center top;\n}\n\n.bg-guit {\n  background-image: url(/img/guit.jpg);\n}\n\n.bg-guit2 {\n  background-image: url(/img/guit2.jpg);\n}\n\n.bg-comp {\n  background-image: url(/img/comp.jpg);\n}\n\n.bg-nl {\n  background-image: url(/img/newlands.jpg);\n}\n\n\n.sm-show {\n  display: none;\n}\n\n\n\n@media screen and (min-width: 50em) {\n\n  .sm-right {\n    -webkit-box-ordinal-group: 3;\n    -webkit-order: 2;\n        -ms-flex-order: 2;\n            order: 2;\n    padding: 0.5rem 0 0.5rem 1rem !important;\n\n  }\n\n  .sm-left {\n    -webkit-box-ordinal-group: 2;\n    -webkit-order: 1;\n        -ms-flex-order: 1;\n            order: 1;\n    padding: 0.5rem 1rem 0.5rem 0 !important;\n\n  }\n\n  .sm-show {\n    display: block;\n  }\n\n}\n", ""]);
 
   // exports
 
