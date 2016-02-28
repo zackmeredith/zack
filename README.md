@@ -1,5 +1,5 @@
-#Zachary Meredith - Web Designer/Developer
+#Zachary Meredith - Personal Site
 
-A personal portfolio site for showcasing my venture into the field of Web Design & Development.
+WIP
 
 
