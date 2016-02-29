@@ -417,12 +417,6 @@ module.exports =
 /* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
-  /**
-   * React Static Boilerplate
-   * https://github.com/koistya/react-static-boilerplate
-   * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
-   */
-
   'use strict';
 
   Object.defineProperty(exports, '__esModule', {
