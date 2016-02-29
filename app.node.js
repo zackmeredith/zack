@@ -747,7 +747,7 @@ module.exports =
                   "I'm a designer and front-end developer trying to make useful things in New Orleans, La. When I'm not at my computer I'm usually ",
                   _react2["default"].createElement(
                     "a",
-                    { href: "", className: "txt-link" },
+                    { href: "http://http://tarenottear.bandcamp.com/releases", className: "txt-link" },
                     "playing guitar"
                   ),
                   " or riding my bike."
@@ -1168,7 +1168,7 @@ module.exports =
                 _react2['default'].createElement(
                   'p',
                   { className: 'job__summary' },
-                  'I helped to redesign and develop the Loyola University New Orleans: Dept. of Film & Music Industry Studies site to both reflect their expansion and prepare for further growth.'
+                  'I\'m helping to redesign and develop the Loyola University New Orleans: Dept. of Film & Music Industry Studies site to both reflect their expansion and prepare for further growth.'
                 ),
                 _react2['default'].createElement(
                   'a',
