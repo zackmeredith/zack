@@ -747,7 +747,7 @@ module.exports =
                   "I'm a designer and front-end developer trying to make useful things in New Orleans, La. When I'm not at my computer I'm usually ",
                   _react2["default"].createElement(
                     "a",
-                    { href: "http://http://tarenottear.bandcamp.com/releases", className: "txt-link" },
+                    { href: "http://tarenottear.bandcamp.com/releases", target: "_blank", className: "txt-link" },
                     "playing guitar"
                   ),
                   " or riding my bike."
