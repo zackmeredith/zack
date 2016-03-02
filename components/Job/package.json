@@ -1,0 +1,5 @@
+{
+  "private": true,
+  "name": "Job",
+  "main": "./Job.js"
+}

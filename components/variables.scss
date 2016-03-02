@@ -1,0 +1,35 @@
+/*
+ * Scaffolding
+ * -------------------------------------------------------------------------- */
+
+$body-bg: #efefef;
+$text-color: #333;
+$light-grey: #bfbfbf;
+$md-grey: #5F5F5F;
+$brand-color: #578EFC;
+$soft-grey: #798693;
+$brand-color: #AACFD0;
+
+/*
+ * Typography
+ * -------------------------------------------------------------------------- */
+
+$font-family-base: 'proxima-nova', -apple-system,
+     ".SFNSUI-Regular", HelveticaNeue, sans-serif;
+$font-base-size: 16px;
+
+/*
+ * Media queries breakpoints
+ * -------------------------------------------------------------------------- */
+
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
+.heading {
+  font-weight: 300;
+}
+
+.heading--name {
+  font-weight: 600;
+}

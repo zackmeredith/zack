@@ -1,0 +1,448 @@
+/**
+ * React Static Boilerplate
+ * https://github.com/koistya/react-static-boilerplate
+ * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
+ */
+
+@import '../variables.scss';
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: $body-bg;
+  color: $text-color;
+  font-family: $font-family-base;
+  box-sizing: border-box;
+  font-size: $font-base-size;
+  height: 100%;
+}
+
+#app {
+  min-height: 100%;
+
+}
+
+.Layout {
+  // height: 100%;
+  min-height: 100%;
+
+}
+
+
+.container  {
+  margin: 0 auto;
+  max-width: 1060px;
+  padding: 1.25rem;
+  background-color: white;
+  min-height: 100%;
+
+
+  @media screen and (min-width: 50em) {
+    padding: 2rem 4rem 1rem;
+    // padding-top: 2rem;
+  }
+}
+
+.section {
+
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 0.075em;
+    // margin-bottom: 1.5rem;
+    color: $light-grey;
+    font-weight: 600;
+
+
+  }
+
+
+}
+
+.hr {
+
+  &--sm-bold {
+    height: 2px;
+    border: none;
+    outline: none;
+    width: 3rem;
+    margin-left: 0;
+    background-color: $text-color;
+
+  }
+}
+
+.job__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.job {
+  margin-bottom: 2rem;
+
+  @media screen and (min-width: 50em) {
+    flex-basis: calc(50% - 1rem);
+    margin-bottom: 2rem;
+
+    &:nth-child(odd) {
+      padding-right: 1rem;
+    }
+    &:nth-child(even) {
+      padding-left: 1rem;
+    }
+    }
+  &__company {
+  font-weight: 600;
+  margin-bottom: 0.25em;
+  font-size: 1rem;
+  color: #393633;
+  }
+
+  &__position {
+    // color: #798693;
+    color: $md-grey;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+  }
+
+  &__duration {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: $light-grey;
+
+  }
+
+  &__summary {
+    margin-bottom: 2rem;
+  }
+}
+
+.heading {
+  line-height: 1.5;
+  display: block;
+  max-width: 560px;
+  font-weight: 300;
+}
+
+.social-list {
+
+  list-style: none;
+  padding-left: 0;
+  padding: 0.5rem 0 0;
+
+  &__item {
+    display: inline-block;
+
+    i {
+      font-size: 1.25rem;
+      color: $text-color;
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        color: $light-grey;
+      }
+    }
+    &:not(last-child) {
+      padding-right: 1.5rem;
+    }
+  }
+}
+
+
+.work {
+  padding: 2rem 0;
+}
+
+
+.btn {
+  border: 1px solid $brand-color;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  color: $brand-color;
+  font-size: 0.875rem;
+  text-align: center;
+  border-radius: 2rem;
+
+  &:hover {
+    background-color: $brand-color;
+    color: white;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+p {
+  line-height: 1.5;
+  color: $md-grey;
+}
+
+
+.intro {
+  padding: 3rem 0 0.5rem;
+}
+
+.wip {
+  height: 0.5rem;
+  background: $brand-color;
+
+}
+
+
+.half-section__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.half-section {
+
+  @media screen and (min-width: 50em) {
+    flex-basis: calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+
+    &:nth-child(odd) {
+      padding-right: 1rem;
+    }
+    &:nth-child(even) {
+      padding-left: 1rem;
+    }
+  }
+}
+
+.txt-link {
+  // display: inline-block;
+  color: $light-grey;
+  text-decoration: none;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    color: $text-color;
+  }
+}
+
+.content-wrapper {
+  margin-bottom: 3rem;
+
+
+    @media screen and (min-width: 50em) {
+      margin-bottom: 5rem;
+    }
+}
+
+
+.fadeInSlideUp {
+  animation: slideUp 1.5s, fadeIn 1.75s;
+  will-change: transform, opacity;
+}
+
+.fadeIn {
+  animation: fadeIn 2s;
+  will-change: opacity;
+}
+
+.wip {
+  animation: fadeIn 1.5s;
+  will-change: opacity;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(15%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(5%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.grid {
+  padding: 0.5rem 0;
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+
+    width: 100%;
+
+    padding: 0.5rem 0;
+
+    &__image {
+      background-size: cover;
+      background-position: center center;
+      min-height: 200px;
+      height: 100%;
+      width: 100%;
+
+    }
+
+
+    @media screen and (min-width: 50em) {
+
+
+
+
+    &:nth-child(even) {
+        padding: 0.5rem 0 0.5rem 1rem;
+    }
+
+    &:nth-child(odd) {
+        padding: 0.5rem 1rem 0.5rem 0;
+    }
+
+    &--one-third {
+      // flex-basis: calc(33%);
+      width: calc(33% - 1rem);
+      height: 360px;
+
+
+    }
+
+    &--two-thirds {
+      width: calc(67% - 1rem);
+      height: 360px;
+
+    }
+
+    &--half {
+      width: calc(50% - 1rem);
+      height: 360px;
+
+    }
+
+    &--half-even {
+      width: calc(50% - 0.5rem);
+      height: 360px;
+
+    }
+
+    &--half-image {
+      width: calc(50% - 0.5rem);
+      height: 360px;
+    }
+
+    &--full {
+      width: 100%;
+      height: 360px;
+      padding: 0.5rem 0 !important;
+    }
+
+  }
+  }
+}
+
+.bg-self {
+  background-image: url(/img/face.jpg);
+  background-position: center top;
+}
+
+.bg-guit {
+  background-image: url(/img/guit.jpg);
+}
+
+.bg-guit2 {
+  background-image: url(/img/guit2.jpg);
+}
+
+.bg-comp {
+  background-image: url(/img/comput.jpg);
+}
+
+.bg-nl {
+  background-image: url(/img/newlands.jpg);
+}
+
+.bg-work1 {
+  background-image: url(/img/work1.jpg);
+}
+
+.bg-work2 {
+  background-image: url(/img/work2.jpg);
+}
+
+.bg-work3 {
+  background-image: url(/img/work3.jpg);
+}
+
+.bg-work4 {
+  background-image: url(/img/work4.jpg);
+}
+
+.bg-work5 {
+  background-image: url(/img/work5.jpg);
+}
+
+.bg-work6 {
+  background-image: url(/img/work6.jpg);
+}
+
+
+.sm-show {
+  display: none;
+}
+
+
+
+@media screen and (min-width: 50em) {
+
+  .sm-right {
+    order: 2;
+    padding: 0.5rem 0 0.5rem 1rem !important;
+
+  }
+
+  .sm-left {
+    order: 1;
+    padding: 0.5rem 1rem 0.5rem 0 !important;
+
+  }
+
+  .sm-show {
+    display: block;
+  }
+
+  .sm-even-pad-left {
+    padding: .5rem 0 .5rem .5rem !important;
+  }
+
+  .sm-even-pad-right {
+    padding: .5rem .5rem .5rem 0 !important;
+  }
+
+}

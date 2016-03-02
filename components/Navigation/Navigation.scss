@@ -1,0 +1,79 @@
+/**
+ * React Static Boilerplate
+ * https://github.com/koistya/react-static-boilerplate
+ * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
+ */
+
+@import '../variables.scss';
+
+.Navigation__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // background: white;
+}
+.Navigation {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+
+}
+
+.Navigation-item {
+  padding: 0 1em;
+  font-size: 0.875rem;
+
+  &:last-child {
+    padding-right: 0;
+  }
+
+  @media screen and (min-width: 50em) {
+    padding: 0.5em 2em;
+
+  }
+}
+
+.Navigation-link {
+  color: #999DA1;
+  text-decoration: none;
+  // text-transform: uppercase;
+  cursor: pointer;
+  font-size: 0.875rem;
+  padding: 0.5em 0;
+
+  &:hover {
+    border-bottom: 2px solid $brand-color;
+    color: $text-color;
+  }
+}
+
+
+.logo {
+  // background: $light-grey;
+  // border: 1px solid $light-grey;
+  // height: 48px;
+  // width: 48px;
+  height: 1.5rem;
+  width: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease-in-out;
+
+  &__inner {
+    height: 1.5rem;
+    width: 1.5rem;
+    background: $brand-color;
+    background-image:
+   linear-gradient(
+     to top,
+     #79A8A9, #AACFD0
+   );
+    border-radius: 50%;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
