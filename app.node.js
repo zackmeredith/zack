@@ -1252,7 +1252,7 @@ module.exports =
                 'I’m always interested in working on new projects and would love to hear about yours. ',
                 _react2['default'].createElement(
                   'a',
-                  { className: 'txt-link', href: 'mailto:zacharybmeredith@gmail.com?subject=YOUR%20SUBJECT%20-%20' },
+                  { className: 'txt-link', href: 'mailto:zacharybmeredith@gmail.com?subject=YOUR%20SUBJECT%20' },
                   'Email me'
                 ),
                 ' if you would like to work together.'
@@ -1268,12 +1268,6 @@ module.exports =
 
   exports['default'] = _default;
   module.exports = exports['default'];
-  /*<section className="contact half-section">
-   <h3 className="section__title">Contact</h3>
-  <p>
-   I’m always interested in working on new projects or startups whether it be for cash or equity. I’m also interested in investing in new ideas and startups. Email me if you would like to work together.
-  </p>
-  </section>*/
 
 /***/ },
 /* 16 */
