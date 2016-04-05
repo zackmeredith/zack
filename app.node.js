@@ -80,21 +80,21 @@ module.exports =
       return __webpack_require__(10);
     }, '/about': function about() {
       return __webpack_require__(11);
-    }, '/blog': function blog() {
-      return __webpack_require__(12);
-    }, '/blog/test-article-one': function blogTestArticleOne() {
-      return __webpack_require__(13);
-    }, '/blog/test-article-two': function blogTestArticleTwo() {
-      return __webpack_require__(14);
     }, '/': function _() {
-      return __webpack_require__(15);
+      return __webpack_require__(12);
     }, '/work/freelance': function workFreelance() {
-      return __webpack_require__(16);
+      return __webpack_require__(13);
     }, '/work': function work() {
-      return __webpack_require__(17);
+      return __webpack_require__(14);
     }, '/work/loyola': function workLoyola() {
-      return __webpack_require__(18);
+      return __webpack_require__(15);
     }, '/work/skuba': function workSkuba() {
+      return __webpack_require__(16);
+    }, '/writing': function writing() {
+      return __webpack_require__(17);
+    }, '/writing/test-article-one': function writingTestArticleOne() {
+      return __webpack_require__(18);
+    }, '/writing/test-article-two': function writingTestArticleTwo() {
       return __webpack_require__(19);
     } }; // Auto-generated on build. See tools/lib/routes-loader.js
 
@@ -514,8 +514,8 @@ module.exports =
           { className: 'Navigation-item' },
           _react2['default'].createElement(
             'a',
-            { className: 'Navigation-link', href: '/work', onClick: _Link2['default'].handleClick },
-            'Work'
+            { className: 'Navigation-link', href: '/writing', onClick: _Link2['default'].handleClick },
+            'Writing'
           )
         )
       )
@@ -732,7 +732,7 @@ module.exports =
                 _react2["default"].createElement(
                   "p",
                   null,
-                  "I'm a designer and front-end developer trying to make useful things in New Orleans, La. When I'm not at my computer I'm usually ",
+                  "I'm a designer & front-end developer trying to make useful things in New Orleans, La. When I'm not at my computer I'm usually ",
                   _react2["default"].createElement(
                     "a",
                     { href: "http://tarenottear.bandcamp.com/releases", target: "_blank", className: "txt-link" },
@@ -757,7 +757,7 @@ module.exports =
                 _react2["default"].createElement(
                   "p",
                   null,
-                  "I'm obsessed with the intersection of functionality and beauty. I try to use this passion to contiously better myself so that I might craft things which have a positive effect on the lives of others."
+                  "I'm obsessed with the intersection of functionality & beauty. I try to use this passion to contiously better myself so that I might craft things which have a positive effect on the lives of others."
                 )
               ),
               _react2["default"].createElement(
@@ -776,12 +776,12 @@ module.exports =
                 _react2["default"].createElement(
                   "p",
                   null,
-                  "My passion for music has allowed me to tour half the U.S. with my best friends and meet countless inpiring people."
+                  "My passion for music has allowed me to tour half the U.S. with my best friends & meet countless inpiring people."
                 ),
                 _react2["default"].createElement(
                   "p",
                   null,
-                  "These experiences not only exposed me to amazing creatives, but also to the importance of community building and cultivating relationships."
+                  "These experiences not only exposed me to amazing creatives, but also to the importance of community building & cultivating relationships."
                 ),
                 _react2["default"].createElement(
                   "p",
@@ -831,201 +831,6 @@ module.exports =
 
 /***/ },
 /* 12 */
-/***/ function(module, exports, __webpack_require__) {
-
-  /**
-   * React Static Boilerplate
-   * https://github.com/koistya/react-static-boilerplate
-   * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
-   */
-
-  'use strict';
-
-  Object.defineProperty(exports, '__esModule', {
-    value: true
-  });
-
-  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-  var _react = __webpack_require__(1);
-
-  var _react2 = _interopRequireDefault(_react);
-
-  var _default = (function (_Component) {
-    _inherits(_default, _Component);
-
-    function _default() {
-      _classCallCheck(this, _default);
-
-      _get(Object.getPrototypeOf(_default.prototype), 'constructor', this).apply(this, arguments);
-    }
-
-    _createClass(_default, [{
-      key: 'render',
-      value: function render() {
-        return _react2['default'].createElement(
-          'div',
-          null,
-          _react2['default'].createElement(
-            'h1',
-            null,
-            'Blog'
-          ),
-          _react2['default'].createElement(
-            'p',
-            null,
-            'Coming soon.'
-          )
-        );
-      }
-    }]);
-
-    return _default;
-  })(_react.Component);
-
-  exports['default'] = _default;
-  module.exports = exports['default'];
-
-/***/ },
-/* 13 */
-/***/ function(module, exports, __webpack_require__) {
-
-  /**
-   * React Static Boilerplate
-   * https://github.com/koistya/react-static-boilerplate
-   * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
-   */
-
-  'use strict';
-
-  Object.defineProperty(exports, '__esModule', {
-    value: true
-  });
-
-  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-  var _react = __webpack_require__(1);
-
-  var _react2 = _interopRequireDefault(_react);
-
-  var _default = (function (_Component) {
-    _inherits(_default, _Component);
-
-    function _default() {
-      _classCallCheck(this, _default);
-
-      _get(Object.getPrototypeOf(_default.prototype), 'constructor', this).apply(this, arguments);
-    }
-
-    _createClass(_default, [{
-      key: 'render',
-      value: function render() {
-        return _react2['default'].createElement(
-          'div',
-          null,
-          _react2['default'].createElement(
-            'h1',
-            null,
-            'Test Article 1'
-          ),
-          _react2['default'].createElement(
-            'p',
-            null,
-            'Coming soon.'
-          )
-        );
-      }
-    }]);
-
-    return _default;
-  })(_react.Component);
-
-  exports['default'] = _default;
-  module.exports = exports['default'];
-
-/***/ },
-/* 14 */
-/***/ function(module, exports, __webpack_require__) {
-
-  /**
-   * React Static Boilerplate
-   * https://github.com/koistya/react-static-boilerplate
-   * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
-   */
-
-  'use strict';
-
-  Object.defineProperty(exports, '__esModule', {
-    value: true
-  });
-
-  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-  var _react = __webpack_require__(1);
-
-  var _react2 = _interopRequireDefault(_react);
-
-  var _default = (function (_Component) {
-    _inherits(_default, _Component);
-
-    function _default() {
-      _classCallCheck(this, _default);
-
-      _get(Object.getPrototypeOf(_default.prototype), 'constructor', this).apply(this, arguments);
-    }
-
-    _createClass(_default, [{
-      key: 'render',
-      value: function render() {
-        return _react2['default'].createElement(
-          'div',
-          null,
-          _react2['default'].createElement(
-            'h1',
-            null,
-            'Test Article 2'
-          ),
-          _react2['default'].createElement(
-            'p',
-            null,
-            'Coming soon.'
-          )
-        );
-      }
-    }]);
-
-    return _default;
-  })(_react.Component);
-
-  exports['default'] = _default;
-  module.exports = exports['default'];
-
-/***/ },
-/* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1215,12 +1020,7 @@ module.exports =
                 _react2['default'].createElement(
                   'span',
                   { className: 'job__position' },
-                  'Designer, Web Developer '
-                ),
-                _react2['default'].createElement(
-                  'span',
-                  { className: 'job__duration' },
-                  '(2014 - Present)'
+                  'Designer, Web Developer'
                 ),
                 _react2['default'].createElement(
                   'p',
@@ -1270,7 +1070,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 16 */
+/* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
   "use strict";
@@ -1334,7 +1134,7 @@ module.exports =
   module.exports = exports["default"];
 
 /***/ },
-/* 17 */
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
   "use strict";
@@ -1439,7 +1239,7 @@ module.exports =
   module.exports = exports["default"];
 
 /***/ },
-/* 18 */
+/* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
   "use strict";
@@ -1508,7 +1308,7 @@ module.exports =
   module.exports = exports["default"];
 
 /***/ },
-/* 19 */
+/* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
   /**
@@ -1578,6 +1378,206 @@ module.exports =
   module.exports = exports["default"];
 
 /***/ },
+/* 17 */
+/***/ function(module, exports, __webpack_require__) {
+
+  /**
+   * React Static Boilerplate
+   * https://github.com/koistya/react-static-boilerplate
+   * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
+   */
+
+  "use strict";
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+
+  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+  function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+  var _react = __webpack_require__(1);
+
+  var _react2 = _interopRequireDefault(_react);
+
+  var _default = (function (_Component) {
+    _inherits(_default, _Component);
+
+    function _default() {
+      _classCallCheck(this, _default);
+
+      _get(Object.getPrototypeOf(_default.prototype), "constructor", this).apply(this, arguments);
+    }
+
+    _createClass(_default, [{
+      key: "render",
+      value: function render() {
+        return _react2["default"].createElement(
+          "div",
+          null,
+          _react2["default"].createElement(
+            "section",
+            { className: "intro" },
+            _react2["default"].createElement(
+              "h1",
+              { className: "heading--name" },
+              "Writing"
+            ),
+            _react2["default"].createElement(
+              "p",
+              null,
+              "Coming soon."
+            )
+          ),
+          _react2["default"].createElement("div", { className: "wip" })
+        );
+      }
+    }]);
+
+    return _default;
+  })(_react.Component);
+
+  exports["default"] = _default;
+  module.exports = exports["default"];
+
+/***/ },
+/* 18 */
+/***/ function(module, exports, __webpack_require__) {
+
+  /**
+   * React Static Boilerplate
+   * https://github.com/koistya/react-static-boilerplate
+   * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
+   */
+
+  'use strict';
+
+  Object.defineProperty(exports, '__esModule', {
+    value: true
+  });
+
+  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+  var _react = __webpack_require__(1);
+
+  var _react2 = _interopRequireDefault(_react);
+
+  var _default = (function (_Component) {
+    _inherits(_default, _Component);
+
+    function _default() {
+      _classCallCheck(this, _default);
+
+      _get(Object.getPrototypeOf(_default.prototype), 'constructor', this).apply(this, arguments);
+    }
+
+    _createClass(_default, [{
+      key: 'render',
+      value: function render() {
+        return _react2['default'].createElement(
+          'div',
+          null,
+          _react2['default'].createElement(
+            'h1',
+            null,
+            'Test Article 1'
+          ),
+          _react2['default'].createElement(
+            'p',
+            null,
+            'Coming soon.'
+          )
+        );
+      }
+    }]);
+
+    return _default;
+  })(_react.Component);
+
+  exports['default'] = _default;
+  module.exports = exports['default'];
+
+/***/ },
+/* 19 */
+/***/ function(module, exports, __webpack_require__) {
+
+  /**
+   * React Static Boilerplate
+   * https://github.com/koistya/react-static-boilerplate
+   * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
+   */
+
+  'use strict';
+
+  Object.defineProperty(exports, '__esModule', {
+    value: true
+  });
+
+  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+  var _react = __webpack_require__(1);
+
+  var _react2 = _interopRequireDefault(_react);
+
+  var _default = (function (_Component) {
+    _inherits(_default, _Component);
+
+    function _default() {
+      _classCallCheck(this, _default);
+
+      _get(Object.getPrototypeOf(_default.prototype), 'constructor', this).apply(this, arguments);
+    }
+
+    _createClass(_default, [{
+      key: 'render',
+      value: function render() {
+        return _react2['default'].createElement(
+          'div',
+          null,
+          _react2['default'].createElement(
+            'h1',
+            null,
+            'Test Article 2'
+          ),
+          _react2['default'].createElement(
+            'p',
+            null,
+            'Coming soon.'
+          )
+        );
+      }
+    }]);
+
+    return _default;
+  })(_react.Component);
+
+  exports['default'] = _default;
+  module.exports = exports['default'];
+
+/***/ },
 /* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -1600,7 +1600,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.heading {\n  font-weight: 300;\n}\n\n.heading--name {\n  font-weight: 600;\n}\n\nhtml, body {\n  margin: 0;\n  padding: 0;\n  background-color: #efefef;\n  color: #333;\n  font-family: 'proxima-nova',-apple-system,\".SFNSUI-Regular\",HelveticaNeue,sans-serif;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  font-size: 16px;\n  height: 100%;\n}\n\n#app {\n  min-height: 100%;\n\n}\n\n.Layout {\n  // height: 100%;\n  min-height: 100%;\n\n}\n\n\n.container  {\n  margin: 0 auto;\n  max-width: 1060px;\n  padding: 1.25rem;\n  background-color: white;\n  min-height: 100%\n}\n\n\n@media screen and (min-width: 50em) {\n\n  .container {\n    padding: 2rem 4rem 1rem;\n    //: 2rem;\n  }\n  }\n\n.section {\n\n\n}\n\n.section__title {\n  text-transform: uppercase;\n  font-size: 0.875rem;\n  letter-spacing: 0.075em;\n  //: 1.5rem;\n  color: #bfbfbf;\n  font-weight: 600;\n}\n\n.hr {\n}\n\n.hr--sm-bold {\n  height: 2px;\n  border: none;\n  outline: none;\n  width: 3rem;\n  margin-left: 0;\n  background-color: #333;\n}\n\n.job__wrapper {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-flex-wrap: wrap;\n      -ms-flex-wrap: wrap;\n          flex-wrap: wrap;\n}\n\n.job {\n  margin-bottom: 2rem\n}\n\n@media screen and (min-width: 50em) {\n\n  .job {\n    -webkit-flex-basis: calc(50% - 1rem);\n        -ms-flex-preferred-size: calc(50% - 1rem);\n            flex-basis: calc(50% - 1rem);\n    margin-bottom: 2rem;\n  }\n\n  .job:nth-child(odd) {\n    padding-right: 1rem;\n  }\n\n  .job:nth-child(even) {\n    padding-left: 1rem;\n  }\n    }\n\n.job__company {\n  font-weight: 600;\n  margin-bottom: 0.25em;\n  font-size: 1rem;\n  color: #393633;\n}\n\n.job__position {\n  //: #798693;\n  color: #5F5F5F;\n  font-size: 0.75rem;\n  text-transform: uppercase;\n  letter-spacing: 0.025em;\n}\n\n.job__duration {\n  text-transform: uppercase;\n  font-size: 0.75rem;\n  color: #bfbfbf;\n}\n\n.job__summary {\n  margin-bottom: 2rem;\n}\n\n.heading {\n  line-height: 1.5;\n  display: block;\n  max-width: 560px;\n  font-weight: 300;\n}\n\n.social-list {\n\n  list-style: none;\n  padding-left: 0;\n  padding: 0.5rem 0 0\n}\n\n.social-list__item {\n  display: inline-block;\n}\n\n.social-list__item i {\n  font-size: 1.25rem;\n  color: #333;\n  -webkit-transition: 0.2s ease-in-out;\n  -o-transition: 0.2s ease-in-out;\n  transition: 0.2s ease-in-out;\n}\n\n.social-list__item i:hover {\n  color: #bfbfbf;\n}\n\n.social-list__item:not(last-child) {\n  padding-right: 1.5rem;\n}\n\n\n.work {\n  padding: 2rem 0;\n}\n\n\n.btn {\n  border: 1px solid #AACFD0;\n  padding: 0.5rem 1.5rem;\n  text-decoration: none;\n  color: #AACFD0;\n  font-size: 0.875rem;\n  text-align: center;\n  border-radius: 2rem\n}\n\n\n.btn:hover {\n  background-color: #AACFD0;\n  color: white;\n}\n\n.center {\n  text-align: center;\n}\n\np {\n  line-height: 1.5;\n  color: #5F5F5F;\n}\n\n\n.intro {\n  padding: 3rem 0 0.5rem;\n}\n\n.wip {\n  height: 0.5rem;\n  background: #AACFD0;\n\n}\n\n\n.half-section__wrapper {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-flex-wrap: wrap;\n      -ms-flex-wrap: wrap;\n          flex-wrap: wrap;\n}\n\n.half-section {\n}\n\n@media screen and (min-width: 50em) {\n\n  .half-section {\n    -webkit-flex-basis: calc(50% - 1rem);\n        -ms-flex-preferred-size: calc(50% - 1rem);\n            flex-basis: calc(50% - 1rem);\n    max-width: calc(50% - 1rem);\n  }\n\n  .half-section:nth-child(odd) {\n    padding-right: 1rem;\n  }\n\n  .half-section:nth-child(even) {\n    padding-left: 1rem;\n  }\n  }\n\n.txt-link {\n  // display: inline-block;\n  color: #bfbfbf;\n  text-decoration: none;\n  padding-bottom: 0.25rem;\n  border-bottom: 1px solid;\n  -webkit-transition: 0.2s ease-in-out;\n  -o-transition: 0.2s ease-in-out;\n  transition: 0.2s ease-in-out\n}\n\n.txt-link:hover {\n  color: #333;\n}\n\n.content-wrapper {\n  margin-bottom: 3rem\n}\n\n@media screen and (min-width: 50em) {\n\n  .content-wrapper {\n    margin-bottom: 5rem;\n  }\n    }\n\n\n.fadeInSlideUp {\n  -webkit-animation: slideUp 1.5s, fadeIn 1.75s;\n       -o-animation: slideUp 1.5s, fadeIn 1.75s;\n          animation: slideUp 1.5s, fadeIn 1.75s;\n  will-change: transform, opacity;\n}\n\n.fadeIn {\n  -webkit-animation: fadeIn 2s;\n       -o-animation: fadeIn 2s;\n          animation: fadeIn 2s;\n  will-change: opacity;\n}\n\n.wip {\n  -webkit-animation: fadeIn 1.5s;\n       -o-animation: fadeIn 1.5s;\n          animation: fadeIn 1.5s;\n  will-change: opacity;\n}\n\n@-webkit-keyframes slideUp {\n  0% {\n    -webkit-transform: translateY(15%);\n            transform: translateY(15%);\n  }\n  100% {\n    -webkit-transform: translateY(0);\n            transform: translateY(0);\n  }\n}\n\n@-o-keyframes slideUp {\n  0% {\n    -o-transform: translateY(15%);\n       transform: translateY(15%);\n  }\n  100% {\n    -o-transform: translateY(0);\n       transform: translateY(0);\n  }\n}\n\n@keyframes slideUp {\n  0% {\n    -webkit-transform: translateY(15%);\n         -o-transform: translateY(15%);\n            transform: translateY(15%);\n  }\n  100% {\n    -webkit-transform: translateY(0);\n         -o-transform: translateY(0);\n            transform: translateY(0);\n  }\n}\n\n@-webkit-keyframes slideRight {\n  0% {\n    -webkit-transform: translateX(5%);\n            transform: translateX(5%);\n  }\n  100% {\n    -webkit-transform: translateX(0);\n            transform: translateX(0);\n  }\n}\n\n@-o-keyframes slideRight {\n  0% {\n    -o-transform: translateX(5%);\n       transform: translateX(5%);\n  }\n  100% {\n    -o-transform: translateX(0);\n       transform: translateX(0);\n  }\n}\n\n@keyframes slideRight {\n  0% {\n    -webkit-transform: translateX(5%);\n         -o-transform: translateX(5%);\n            transform: translateX(5%);\n  }\n  100% {\n    -webkit-transform: translateX(0);\n         -o-transform: translateX(0);\n            transform: translateX(0);\n  }\n}\n\n@-webkit-keyframes fadeIn {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n\n@-o-keyframes fadeIn {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n\n@keyframes fadeIn {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.grid {\n  padding: 0.5rem 0\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.grid__row {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-flex-wrap: wrap;\n      -ms-flex-wrap: wrap;\n          flex-wrap: wrap;\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.grid__item {\n  width: 100%;\n  padding: 0.5rem 0;\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.grid__item__image {\n  -webkit-background-size: cover;\n          background-size: cover;\n  background-position: center center;\n  min-height: 200px;\n  height: 100%;\n  width: 100%;\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n@media screen and (min-width: 50em) {\n\n  .grid__item {\n\n\n}\n\n  .grid__item:nth-child(even) {\n    padding: 0.5rem 0 0.5rem 1rem;\n  }\n\n  .grid__item:nth-child(odd) {\n    padding: 0.5rem 1rem 0.5rem 0;\n  }\n\n  .grid__item--one-third {\n    //: calc(33%);\n    width: calc(33% - 1rem);\n    height: 360px;\n  }\n\n  .grid__item--two-thirds {\n    width: calc(67% - 1rem);\n    height: 360px;\n  }\n\n  .grid__item--half {\n    width: calc(50% - 1rem);\n    height: 360px;\n  }\n\n  .grid__item--half-even {\n    width: calc(50% - 0.5rem);\n    height: 360px;\n  }\n\n  .grid__item--half-image {\n    width: calc(50% - 0.5rem);\n    height: 360px;\n  }\n\n  .grid__item--full {\n    width: 100%;\n    height: 360px;\n    padding: 0.5rem 0 !important;\n  }\n}\n\n.bg-self {\n  background-image: url(/img/face.jpg);\n  background-position: center top;\n}\n\n.bg-guit {\n  background-image: url(/img/guit.jpg);\n}\n\n.bg-guit2 {\n  background-image: url(/img/guit2.jpg);\n}\n\n.bg-comp {\n  background-image: url(/img/comput.jpg);\n}\n\n.bg-nl {\n  background-image: url(/img/newlands.jpg);\n}\n\n.bg-work1 {\n  background-image: url(/img/work1.jpg);\n}\n\n.bg-work2 {\n  background-image: url(/img/work2.jpg);\n}\n\n.bg-work3 {\n  background-image: url(/img/work3.jpg);\n}\n\n.bg-work4 {\n  background-image: url(/img/work4.jpg);\n}\n\n.bg-work5 {\n  background-image: url(/img/work5.jpg);\n}\n\n.bg-work6 {\n  background-image: url(/img/work6.jpg);\n}\n\n\n.sm-show {\n  display: none;\n}\n\n\n\n@media screen and (min-width: 50em) {\n\n  .sm-right {\n    -webkit-box-ordinal-group: 3;\n    -webkit-order: 2;\n        -ms-flex-order: 2;\n            order: 2;\n    padding: 0.5rem 0 0.5rem 1rem !important;\n\n  }\n\n  .sm-left {\n    -webkit-box-ordinal-group: 2;\n    -webkit-order: 1;\n        -ms-flex-order: 1;\n            order: 1;\n    padding: 0.5rem 1rem 0.5rem 0 !important;\n\n  }\n\n  .sm-show {\n    display: block;\n  }\n\n  .sm-even-pad-left {\n    padding: .5rem 0 .5rem .5rem !important;\n  }\n\n  .sm-even-pad-right {\n    padding: .5rem .5rem .5rem 0 !important;\n  }\n\n}\n", ""]);
+  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.heading {\n  font-weight: 300;\n}\n\n.heading--name {\n  font-weight: 600;\n}\n\nhtml, body {\n  margin: 0;\n  padding: 0;\n  background-color: #efefef;\n  color: #333;\n  font-family: 'proxima-nova',-apple-system,\".SFNSUI-Regular\",HelveticaNeue,sans-serif;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  font-size: 16px;\n  height: 100%;\n}\n\n#app {\n  min-height: 100%;\n\n}\n\n.Layout {\n  // height: 100%;\n  min-height: 100%;\n\n}\n\n.container  {\n  margin: 0 auto;\n  max-width: 1060px;\n  padding: 1.25rem;\n  background-color: white;\n  min-height: 100%\n}\n\n@media screen and (min-width: 50em) {\n\n  .container {\n    padding: 2rem 4rem 1rem;\n    //: 2rem;\n  }\n  }\n\n.section {\n\n\n}\n\n.section__title {\n  text-transform: uppercase;\n  font-size: 0.875rem;\n  letter-spacing: 0.075em;\n  //: 1.5rem;\n  color: #bfbfbf;\n  font-weight: 600;\n}\n\n.hr {\n}\n\n.hr--sm-bold {\n  height: 2px;\n  border: none;\n  outline: none;\n  width: 3rem;\n  margin-left: 0;\n  background-color: #333;\n}\n\n.job__wrapper {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-flex-wrap: wrap;\n      -ms-flex-wrap: wrap;\n          flex-wrap: wrap;\n}\n\n.job {\n  margin-bottom: 2rem\n}\n\n@media screen and (min-width: 50em) {\n\n  .job {\n    -webkit-flex-basis: calc(50% - 1rem);\n        -ms-flex-preferred-size: calc(50% - 1rem);\n            flex-basis: calc(50% - 1rem);\n    margin-bottom: 2rem;\n  }\n\n  .job:nth-child(odd) {\n    padding-right: 1rem;\n  }\n\n  .job:nth-child(even) {\n    padding-left: 1rem;\n  }\n    }\n\n.job__company {\n  font-weight: 600;\n  margin-bottom: 0.25em;\n  font-size: 1rem;\n  color: #393633;\n}\n\n.job__position {\n  //: #798693;\n  color: #5F5F5F;\n  font-size: 0.75rem;\n  text-transform: uppercase;\n  letter-spacing: 0.025em;\n}\n\n.job__duration {\n  text-transform: uppercase;\n  font-size: 0.75rem;\n  color: #bfbfbf;\n}\n\n.job__summary {\n  margin-bottom: 2rem;\n}\n\n.heading {\n  line-height: 1.5;\n  display: block;\n  max-width: 560px;\n  font-weight: 300;\n}\n\n.social-list {\n\n  list-style: none;\n  padding-left: 0;\n  padding: 0.5rem 0 0\n}\n\n.social-list__item {\n  display: inline-block;\n}\n\n.social-list__item i {\n  font-size: 1.25rem;\n  color: #333;\n  -webkit-transition: 0.2s ease-in-out;\n  -o-transition: 0.2s ease-in-out;\n  transition: 0.2s ease-in-out;\n}\n\n.social-list__item i:hover {\n  color: #bfbfbf;\n}\n\n.social-list__item:not(last-child) {\n  padding-right: 1.5rem;\n}\n\n\n.work {\n  padding: 2rem 0;\n}\n\n\n.btn {\n  border: 1px solid #AACFD0;\n  padding: 0.5rem 1.5rem;\n  text-decoration: none;\n  color: #AACFD0;\n  font-size: 0.875rem;\n  text-align: center;\n  border-radius: 2rem\n}\n\n\n.btn:hover {\n  background-color: #AACFD0;\n  color: white;\n}\n\n.center {\n  text-align: center;\n}\n\np {\n  line-height: 1.5;\n  color: #5F5F5F;\n}\n\n\n.intro {\n  padding: 3rem 0 0.5rem;\n}\n\n.wip {\n  height: 0.5rem;\n  background: #AACFD0;\n\n}\n\n\n.half-section__wrapper {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-flex-wrap: wrap;\n      -ms-flex-wrap: wrap;\n          flex-wrap: wrap;\n}\n\n.half-section {\n}\n\n@media screen and (min-width: 50em) {\n\n  .half-section {\n    -webkit-flex-basis: calc(50% - 1rem);\n        -ms-flex-preferred-size: calc(50% - 1rem);\n            flex-basis: calc(50% - 1rem);\n    max-width: calc(50% - 1rem);\n  }\n\n  .half-section:nth-child(odd) {\n    padding-right: 1rem;\n  }\n\n  .half-section:nth-child(even) {\n    padding-left: 1rem;\n  }\n  }\n\n.txt-link {\n  // display: inline-block;\n  color: #bfbfbf;\n  text-decoration: none;\n  padding-bottom: 0.25rem;\n  border-bottom: 1px solid;\n  -webkit-transition: 0.2s ease-in-out;\n  -o-transition: 0.2s ease-in-out;\n  transition: 0.2s ease-in-out\n}\n\n.txt-link:hover {\n  color: #333;\n}\n\n.content-wrapper {\n  margin-bottom: 3rem\n}\n\n@media screen and (min-width: 50em) {\n\n  .content-wrapper {\n    margin-bottom: 5rem;\n  }\n    }\n\n\n.fadeInSlideUp {\n  -webkit-animation: slideUp 1.5s, fadeIn 1.75s;\n       -o-animation: slideUp 1.5s, fadeIn 1.75s;\n          animation: slideUp 1.5s, fadeIn 1.75s;\n  will-change: transform, opacity;\n}\n\n.fadeIn {\n  -webkit-animation: fadeIn 2s;\n       -o-animation: fadeIn 2s;\n          animation: fadeIn 2s;\n  will-change: opacity;\n}\n\n.wip {\n  -webkit-animation: fadeIn 1.5s;\n       -o-animation: fadeIn 1.5s;\n          animation: fadeIn 1.5s;\n  will-change: opacity;\n}\n\n@-webkit-keyframes slideUp {\n  0% {\n    -webkit-transform: translateY(15%);\n            transform: translateY(15%);\n  }\n  100% {\n    -webkit-transform: translateY(0);\n            transform: translateY(0);\n  }\n}\n\n@-o-keyframes slideUp {\n  0% {\n    -o-transform: translateY(15%);\n       transform: translateY(15%);\n  }\n  100% {\n    -o-transform: translateY(0);\n       transform: translateY(0);\n  }\n}\n\n@keyframes slideUp {\n  0% {\n    -webkit-transform: translateY(15%);\n         -o-transform: translateY(15%);\n            transform: translateY(15%);\n  }\n  100% {\n    -webkit-transform: translateY(0);\n         -o-transform: translateY(0);\n            transform: translateY(0);\n  }\n}\n\n@-webkit-keyframes slideRight {\n  0% {\n    -webkit-transform: translateX(5%);\n            transform: translateX(5%);\n  }\n  100% {\n    -webkit-transform: translateX(0);\n            transform: translateX(0);\n  }\n}\n\n@-o-keyframes slideRight {\n  0% {\n    -o-transform: translateX(5%);\n       transform: translateX(5%);\n  }\n  100% {\n    -o-transform: translateX(0);\n       transform: translateX(0);\n  }\n}\n\n@keyframes slideRight {\n  0% {\n    -webkit-transform: translateX(5%);\n         -o-transform: translateX(5%);\n            transform: translateX(5%);\n  }\n  100% {\n    -webkit-transform: translateX(0);\n         -o-transform: translateX(0);\n            transform: translateX(0);\n  }\n}\n\n@-webkit-keyframes fadeIn {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n\n@-o-keyframes fadeIn {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n\n@keyframes fadeIn {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.grid {\n  padding: 0.5rem 0\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.grid__row {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-flex-wrap: wrap;\n      -ms-flex-wrap: wrap;\n          flex-wrap: wrap;\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.grid__item {\n  width: 100%;\n  padding: 0.5rem 0;\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.grid__item__image {\n  -webkit-background-size: cover;\n          background-size: cover;\n  background-position: center center;\n  min-height: 200px;\n  height: 100%;\n  width: 100%;\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n@media screen and (min-width: 50em) {\n\n  .grid__item {\n\n\n}\n\n  .grid__item:nth-child(even) {\n    padding: 0.5rem 0 0.5rem 1rem;\n  }\n\n  .grid__item:nth-child(odd) {\n    padding: 0.5rem 1rem 0.5rem 0;\n  }\n\n  .grid__item--one-third {\n    //: calc(33%);\n    width: calc(33% - 1rem);\n    height: 360px;\n  }\n\n  .grid__item--two-thirds {\n    width: calc(67% - 1rem);\n    height: 360px;\n  }\n\n  .grid__item--half {\n    width: calc(50% - 1rem);\n    height: 360px;\n  }\n\n  .grid__item--half-even {\n    width: calc(50% - 0.5rem);\n    height: 360px;\n  }\n\n  .grid__item--half-image {\n    width: calc(50% - 0.5rem);\n    height: 360px;\n  }\n\n  .grid__item--full {\n    width: 100%;\n    height: 360px;\n    padding: 0.5rem 0 !important;\n  }\n}\n\n.bg-self {\n  background-image: url(/img/face.jpg);\n  background-position: center top;\n}\n\n.bg-guit {\n  background-image: url(/img/guit.jpg);\n}\n\n.bg-guit2 {\n  background-image: url(/img/guit2.jpg);\n}\n\n.bg-comp {\n  background-image: url(/img/comput.jpg);\n}\n\n.bg-nl {\n  background-image: url(/img/newlands.jpg);\n}\n\n.bg-work1 {\n  background-image: url(/img/work1.jpg);\n}\n\n.bg-work2 {\n  background-image: url(/img/work2.jpg);\n}\n\n.bg-work3 {\n  background-image: url(/img/work3.jpg);\n}\n\n.bg-work4 {\n  background-image: url(/img/work4.jpg);\n}\n\n.bg-work5 {\n  background-image: url(/img/work5.jpg);\n}\n\n.bg-work6 {\n  background-image: url(/img/work6.jpg);\n}\n\n\n.sm-show {\n  display: none;\n}\n\n\n\n@media screen and (min-width: 50em) {\n\n  .sm-right {\n    -webkit-box-ordinal-group: 3;\n    -webkit-order: 2;\n        -ms-flex-order: 2;\n            order: 2;\n    padding: 0.5rem 0 0.5rem 1rem !important;\n\n  }\n\n  .sm-left {\n    -webkit-box-ordinal-group: 2;\n    -webkit-order: 1;\n        -ms-flex-order: 1;\n            order: 1;\n    padding: 0.5rem 1rem 0.5rem 0 !important;\n\n  }\n\n  .sm-show {\n    display: block;\n  }\n\n  .sm-even-pad-left {\n    padding: .5rem 0 .5rem .5rem !important;\n  }\n\n  .sm-even-pad-right {\n    padding: .5rem .5rem .5rem 0 !important;\n  }\n\n}\n", ""]);
 
   // exports
 
@@ -1628,7 +1628,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.heading {\n  font-weight: 300;\n}\n\n.heading--name {\n  font-weight: 600;\n}\n\n.Navigation__wrapper {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: justify;\n  -webkit-justify-content: space-between;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  // background: white;\n}\n.Navigation {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -webkit-flex-direction: row;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  list-style: none;\n  padding: 0;\n\n}\n\n.Navigation-item {\n  padding: 0 1em;\n  font-size: 0.875rem\n}\n\n.Navigation-item:last-child {\n  padding-right: 0;\n}\n\n@media screen and (min-width: 50em) {\n\n  .Navigation-item {\n    padding: 0.5em 2em;\n  }\n\n  }\n\n.Navigation-link {\n  color: #999DA1;\n  text-decoration: none;\n  // text-transform: uppercase;\n  cursor: pointer;\n  font-size: 0.875rem;\n  padding: 0.5em 0\n}\n\n.Navigation-link:hover {\n  border-bottom: 2px solid #AACFD0;\n  color: #333;\n}\n\n\n.logo {\n  // background: #bfbfbf;\n  // border: 1px solid #bfbfbf;\n  // height: 48px;\n  // width: 48px;\n  height: 1.5rem;\n  width: 1.5rem;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n  -webkit-justify-content: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-transition: 0.2s ease-in-out;\n  -o-transition: 0.2s ease-in-out;\n  transition: 0.2s ease-in-out\n}\n\n\n.logo__inner {\n  height: 1.5rem;\n  width: 1.5rem;\n  background: #AACFD0;\n  background-image: -webkit-gradient(\n     linear,\n     left bottom, left top,\n     from(#79A8A9), to(#AACFD0)\n   );\n  background-image: -webkit-linear-gradient(\n     bottom,\n     #79A8A9, #AACFD0\n   );\n  background-image: -o-linear-gradient(\n     bottom,\n     #79A8A9, #AACFD0\n   );\n  background-image: linear-gradient(\n     to top,\n     #79A8A9, #AACFD0\n   );\n  border-radius: 50%;\n}\n\n\n.logo:hover {\n  -webkit-transform: scale(1.2);\n      -ms-transform: scale(1.2);\n       -o-transform: scale(1.2);\n          transform: scale(1.2);\n}\n", ""]);
+  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.heading {\n  font-weight: 300;\n}\n\n.heading--name {\n  font-weight: 600;\n}\n\n.Navigation__wrapper {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: justify;\n  -webkit-justify-content: space-between;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  // background: white;\n}\n.Navigation {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -webkit-flex-direction: row;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  list-style: none;\n  padding: 0;\n\n}\n\n.Navigation-item {\n  padding: 0 1rem;\n  font-size: 0.875rem\n}\n\n.Navigation-item:last-child {\n  padding-right: 0;\n}\n\n@media screen and (min-width: 50em) {\n\n  .Navigation-item {\n    padding: 0.5em 1rem;\n  }\n\n  }\n\n.Navigation-link {\n  color: #999DA1;\n  text-decoration: none;\n  // text-transform: uppercase;\n  cursor: pointer;\n  font-size: 0.875rem;\n  padding: 0.5em 0\n}\n\n.Navigation-link:hover {\n  border-bottom: 2px solid #AACFD0;\n  color: #333;\n}\n\n\n.logo {\n  // background: #bfbfbf;\n  // border: 1px solid #bfbfbf;\n  // height: 48px;\n  // width: 48px;\n  height: 1.5rem;\n  width: 1.5rem;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n  -webkit-justify-content: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-transition: 0.2s ease-in-out;\n  -o-transition: 0.2s ease-in-out;\n  transition: 0.2s ease-in-out\n}\n\n\n.logo__inner {\n  height: 1.5rem;\n  width: 1.5rem;\n  background: #AACFD0;\n  background-image: -webkit-gradient(\n     linear,\n     left bottom, left top,\n     from(#79A8A9), to(#AACFD0)\n   );\n  background-image: -webkit-linear-gradient(\n     bottom,\n     #79A8A9, #AACFD0\n   );\n  background-image: -o-linear-gradient(\n     bottom,\n     #79A8A9, #AACFD0\n   );\n  background-image: linear-gradient(\n     to top,\n     #79A8A9, #AACFD0\n   );\n  border-radius: 50%;\n}\n\n\n.logo:hover {\n  -webkit-transform: scale(1.2);\n      -ms-transform: scale(1.2);\n       -o-transform: scale(1.2);\n          transform: scale(1.2);\n}\n", ""]);
 
   // exports
 
