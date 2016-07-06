@@ -11,7 +11,7 @@ function Navigation() {
           <a className="Navigation-link" href="/about" onClick={Link.handleClick}>About</a>
         </li>
         <li className="Navigation-item">
-          <a className="Navigation-link" href="/work" onClick={Link.handleClick}>Work</a>
+          <a className="Navigation-link" href="/writing" onClick={Link.handleClick}>Writing</a>
         </li>
 
       </ul>

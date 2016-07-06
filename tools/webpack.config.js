@@ -22,7 +22,7 @@ const AUTOPREFIXER_BROWSERS = [
   'Safari >= 7.1',
 ];
 const JS_LOADER = {
-  test: /\.jsx?$/,
+  test: /\.js?$/,
   include: [
     path.resolve(__dirname, '../components'),
     path.resolve(__dirname, '../core'),
@@ -69,7 +69,10 @@ const config = {
       }, {
         test: /\.json$/,
         loader: 'json-loader',
-      }, {
+      },
+      { test: /\.yml$/,  loader: 'json!yaml' },
+      { test: /\.md$/,   loader: 'markdown-with-front-matter'},
+      {
         test: /\.txt$/,
         loader: 'raw-loader',
       }, {
@@ -81,6 +84,7 @@ const config = {
       },
     ],
   },
+
   postcss: function plugins(bundler) {
     return [
       require('postcss-import')({ addDependencyTo: bundler }),
@@ -147,6 +151,8 @@ const appConfig = merge({}, config, {
         test: /\.scss$/,
         loaders: ['style-loader', 'css-loader', 'postcss-loader'],
       },
+      { test: /\.yml$/,  loader: 'json!yaml' },
+      { test: /\.md$/,   loader: 'markdown-with-front-matter'},
       {
       test: /\.svg$/,
       loader: 'svg-sprite?' + JSON.stringify({
@@ -179,16 +185,21 @@ const pagesConfig = merge({}, config, {
   plugins: config.plugins.concat([
     new webpack.optimize.LimitChunkCountPlugin({ maxChunks: 1 }),
   ]),
+
   module: {
     loaders: [
       JS_LOADER,
       ...config.module.loaders,
+      { test: /\.yml$/,  loader: 'json!yaml' },
+      { test: /\.md$/,   loader: 'markdown-with-front-matter'},
       {
         test: /\.scss$/,
         loaders: ['css-loader', 'postcss-loader'],
       },
     ],
   },
+
+
 });
 
 export default [appConfig, pagesConfig];

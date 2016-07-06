@@ -42,9 +42,9 @@ export default class extends Component {
 
               <div className="job">
                 <h4 className="job__company">Freelance</h4>
-                <span className="job__position">Designer, Web Developer </span><span className="job__duration">(2014 - Present)</span>
+                <span className="job__position">Designer, Web Developer</span>
                   <p className="job__summary">Worked with clients to translate their personal brands or businesses to the Web through design and development.</p>
-                  <a className="btn" href="/work/freelance" onClick={Link.handleClick}>Read More</a>
+                  {/*<a className="btn" href="/work/freelance" onClick={Link.handleClick}>Read More</a>*/}
               </div>
 
             </div>

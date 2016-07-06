@@ -5,10 +5,9 @@
  */
 
 import webpack from 'webpack';
-import task from './lib/task';
 import webpackConfig from './webpack.config';
 
-export default task(function bundle() {
+function bundle() {
   return new Promise((resolve, reject) => {
     const bundler = webpack(webpackConfig);
     const run = (err, stats) => {
@@ -21,4 +20,6 @@ export default task(function bundle() {
     };
     bundler.run(run);
   });
-});
+}
+
+export default bundle;

@@ -28,7 +28,6 @@ html, body {
 
 }
 
-
 .container  {
   margin: 0 auto;
   max-width: 1060px;
@@ -53,9 +52,13 @@ html, body {
     // margin-bottom: 1.5rem;
     color: $light-grey;
     font-weight: 600;
-
-
   }
+
+  &-titleWrapper {
+  padding: 1rem 0 1rem 1.5rem;
+  border-left: 2px solid $brand-color;
+  display: block;
+}
 
 
 }
@@ -164,6 +167,7 @@ html, body {
   font-size: 0.875rem;
   text-align: center;
   border-radius: 2rem;
+  transition: all 0.075s ease-in-out;
 
   &:hover {
     background-color: $brand-color;
@@ -309,12 +313,12 @@ p {
       min-height: 200px;
       height: 100%;
       width: 100%;
-
     }
 
 
     @media screen and (min-width: 50em) {
 
+      height: 100%;
 
 
 
@@ -337,7 +341,6 @@ p {
     &--two-thirds {
       width: calc(67% - 1rem);
       height: 360px;
-
     }
 
     &--half {
@@ -361,6 +364,12 @@ p {
       width: 100%;
       height: 360px;
       padding: 0.5rem 0 !important;
+    }
+
+    &--p {
+      width: calc(60% - 1rem);
+
+
     }
 
   }
@@ -412,6 +421,65 @@ p {
   background-image: url(/img/work6.jpg);
 }
 
+.bg-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-contain {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-famis-banner {
+  background-image: url('/img/famis-banner.jpg');
+}
+
+.bg-skuba-banner {
+  background-image: url('/img/skuba.jpg');
+}
+
+.bg-famis-tiles {
+  background-image: url('/img/famis-tiles.jpg');
+}
+
+.bg-famis-tiles2 {
+  background-image: url('/img/famis-tiles2.jpg');
+}
+
+.bg-famis-home-tiles {
+  background-image: url('/img/home-tiles.jpg');
+}
+
+.bg-famis-news-tiles {
+  background-image: url('/img/news-tiles.jpg');
+}
+
+.bg-famis-home {
+  background-image: url('/img/famhome.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-famis-mobile-home {
+  background-image: url('/img/mobile-home.jpg');
+}
+
+.bg-famis-2 {
+  background-image: url('/img/famismobile.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.bg-red-grad {
+background: linear-gradient(-90deg,$maroon 0, $maroon2 75%);
+
+}
 
 .sm-show {
   display: none;
@@ -445,4 +513,72 @@ p {
     padding: .5rem .5rem .5rem 0 !important;
   }
 
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.py4 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.p-lrg {
+  font-size: 18px;
+  line-height: 1.8;
+
+  @media screen and (min-width: 50em) {
+    line-height: 2;
+  }
+}
+
+
+.banner-height {
+
+  height: 160px;
+
+  @media screen and (min-width: 50em) {
+    height: 360px;
+  }
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-img-lrg {
+  height: 200px;
+
+  @media screen and (min-width: 40em) {
+    height: 300px;
+  }
+
+  @media screen and (min-width: 60em) {
+    height: 430px;
+  }
+}
+
+
+.shadow-lrg {
+  box-shadow: 0 1px 16px 6px rgba(64,64,64,.15)
+}
+
+
+.flex-end {
+  align-self: flex-end;
+}
+
+
+.p0 {
+  padding: 0 !important;
+}
+
+
+.h-min-200 {
+  min-height: 200px;
 }

@@ -7,19 +7,20 @@
 import glob from 'glob';
 import { join } from 'path';
 
-export default function(source) {
+module.exports =  function(source) {
   this.cacheable();
   const target = this.target;
   const callback = this.async();
 
   if (target === 'node') {
-    source = source.replace('import \'babel/polyfill\';', ''); // eslint-disable-line no-param-reassign
+    source = source.replace('import \'babel-polyfill\';', ''); // eslint-disable-line no-param-reassign
   }
 
-  glob('**/*.{js,jsx}', { cwd: join(__dirname, '../../pages') }, (err, files) => {
+  glob('{' + '**/*.{js,jsx}' + ',' + '**/*.md' + '}', { cwd: join(__dirname, '../../pages') }, (err, files) => {
     if (err) {
       return callback(err);
     }
+
 
     const lines = files.map(file => {
       let path = '/' + file;
@@ -32,15 +33,18 @@ export default function(source) {
         path = path.substr(0, path.length - 10);
       } else if (path.endsWith('.js')) {
         path = path.substr(0, path.length - 3);
+      } else if (path.endsWith('.md')) {
+        path = path.substr(0, path.length - 3);
       } else if (path.endsWith('.jsx')) {
         path = path.substr(0, path.length - 4);
       }
 
       if (target === 'node' || path === '/404' || path === '/500') {
-        return `  '${path}': () => require('./pages/${file}'),`;
+        return `  '${path}': () => require('./pages/${file}').default,`;
       }
 
       return `  '${path}': () => new Promise(resolve => require(['./pages/${file}'], resolve)),`;
+
     });
 
     if (lines.length) {
@@ -49,4 +53,4 @@ export default function(source) {
 
     return callback(new Error('Cannot find any routes.'));
   });
-}
+};
