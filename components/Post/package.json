@@ -1,0 +1,5 @@
+{
+  "private": true,
+  "name": "Post",
+  "main": "./Post.js"
+}
