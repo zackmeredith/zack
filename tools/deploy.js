@@ -4,9 +4,9 @@ require('babel-polyfill')
 
 // TODO: Update deployment URL
 const remote = {
-  name: 'github',
-  url: 'https://github.com/zackmeredith/zack.git',
-  branch: 'gh-pages',
+  name: 'zack',
+  url: 'https://github.com/zackmeredith/zack',
+  branch: 'gh-pages'
 };
 
 /**
