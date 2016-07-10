@@ -1,4 +1,6 @@
-import GitRepo from 'git-repository';
+import GitRepo from 'git-repository'
+require("babel-core/register")
+require('babel-polyfill')
 
 // TODO: Update deployment URL
 const remote = {
