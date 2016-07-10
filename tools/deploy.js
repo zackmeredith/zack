@@ -1,11 +1,11 @@
-import GitRepo from 'git-repository'
-require("babel-core/register")
-require('babel-polyfill')
+import Repo from 'git-repository';
+require("babel-core/register");
+require('babel-polyfill');
 
 // TODO: Update deployment URL
 const remote = {
   name: 'zack',
-  url: 'https://github.com/zackmeredith/zack',
+  url: 'https://github.com/zackmeredith/zack.git',
   branch: 'gh-pages'
 };
 
@@ -15,7 +15,7 @@ const remote = {
 async function deploy() {
   // Initialize a new Git repository inside the `/build` folder
   // if it doesn't exist yet
-  const repo = await GitRepo.open('build', { init: true });
+  const repo = await Repo.open('build', { init: true });
   await repo.setRemote(remote.name, remote.url);
 
   // Fetch the remote repository if it exists
