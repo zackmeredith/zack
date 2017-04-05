@@ -15,7 +15,7 @@ const remote = {
 async function deploy() {
   // Initialize a new Git repository inside the `/build` folder
   // if it doesn't exist yet
-  const repo = await Repo.open('build', { init: true });
+  const repo = await Repo.open('./build', { init: true });
   await repo.setRemote(remote.name, remote.url);
 
   // Fetch the remote repository if it exists
