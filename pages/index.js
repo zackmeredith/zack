@@ -28,9 +28,15 @@ export default class extends Component {
 
             <div className="job__wrapper">
               <div className="job">
+                <h4 className="job__company">Echo&Co</h4>
+                <span className="job__position">Designer </span><span className="job__duration">(Summer 2016 - Present)</span>
+                  <p className="job__summary">I'm working to create digital tools and sites for nonprofits and clients focused on social good.</p>
+                  <a className="btn" href="/work/echo" onClick={Link.handleClick}>Read More</a>
+              </div>
+              <div className="job">
                 <h4 className="job__company">LOYNO: Dept. of Film & Music Industry Studies</h4>
-                <span className="job__position">Designer & Front-end developer </span><span className="job__duration">(Fall 2015 - Present)</span>
-                  <p className="job__summary">I'm helping to redesign and develop the Loyola University New Orleans: Dept. of Film & Music Industry Studies site to both reflect their expansion and prepare for further growth.</p>
+                <span className="job__position">Designer & Front-end developer </span><span className="job__duration">(Fall 2015 - Summer 2016)</span>
+                  <p className="job__summary">Helped to redesign and develop the Loyola University New Orleans: Dept. of Film & Music Industry Studies site to both reflect their expansion and prepare for further growth.</p>
                   <a className="btn" href="/work/loyola" onClick={Link.handleClick}>Read More</a>
               </div>
               <div className="job">

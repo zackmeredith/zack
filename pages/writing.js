@@ -13,8 +13,6 @@ export default class extends Component {
     <h1 className="heading--name">Writing</h1>
       <p>Coming soon.</p>
     </section>
-
-    <div className="wip"></div>
 {/*
     {
     values(posts).reverse().map(post =>
