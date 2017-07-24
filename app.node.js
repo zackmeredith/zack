@@ -43,7 +43,7 @@ module.exports =
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
   'use strict';
 
@@ -52,11 +52,11 @@ module.exports =
   });
   exports.routes = exports.route = undefined;
 
-  var _regenerator = __webpack_require__(37);
+  var _regenerator = __webpack_require__(38);
 
   var _regenerator2 = _interopRequireDefault(_regenerator);
 
-  var _asyncToGenerator2 = __webpack_require__(34);
+  var _asyncToGenerator2 = __webpack_require__(35);
 
   var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
 
@@ -64,7 +64,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _reactDom = __webpack_require__(41);
+  var _reactDom = __webpack_require__(42);
 
   var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -84,8 +84,8 @@ module.exports =
 
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+  __webpack_require__(34);
   __webpack_require__(33);
-  __webpack_require__(32);
 
   // import {data} from './tools/render'
 
@@ -108,14 +108,16 @@ module.exports =
       return __webpack_require__(22).default;
     }, '/work/loyola': function workLoyola() {
       return __webpack_require__(23).default;
-    }, '/work/skuba': function workSkuba() {
+    }, '/work/pivotus': function workPivotus() {
       return __webpack_require__(24).default;
-    }, '/writing': function writing() {
+    }, '/work/skuba': function workSkuba() {
       return __webpack_require__(25).default;
+    }, '/writing': function writing() {
+      return __webpack_require__(26).default;
     }, '/writing/yo': function writingYo() {
-      return __webpack_require__(30).default;
-    }, '/writing/yocopy': function writingYocopy() {
       return __webpack_require__(31).default;
+    }, '/writing/yocopy': function writingYocopy() {
+      return __webpack_require__(32).default;
     } }; // Auto-generated on build. See tools/lib/routes-loader.js
 
   var route = function () {
@@ -201,45 +203,45 @@ module.exports =
   exports.route = route;
   exports.routes = routes;
 
-/***/ }),
+/***/ },
 /* 1 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
   module.exports = require("react");
 
-/***/ }),
+/***/ },
 /* 2 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
   module.exports = require("babel-runtime/core-js/object/get-prototype-of");
 
-/***/ }),
+/***/ },
 /* 3 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
   module.exports = require("babel-runtime/helpers/classCallCheck");
 
-/***/ }),
+/***/ },
 /* 4 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
   module.exports = require("babel-runtime/helpers/createClass");
 
-/***/ }),
+/***/ },
 /* 5 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
   module.exports = require("babel-runtime/helpers/inherits");
 
-/***/ }),
+/***/ },
 /* 6 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
   module.exports = require("babel-runtime/helpers/possibleConstructorReturn");
 
-/***/ }),
+/***/ },
 /* 7 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
   /*
   	MIT License http://www.opensource.org/licenses/mit-license.php
@@ -293,9 +295,9 @@ module.exports =
   };
 
 
-/***/ }),
+/***/ },
 /* 8 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
   'use strict';
 
@@ -303,11 +305,11 @@ module.exports =
     value: true
   });
 
-  var _extends2 = __webpack_require__(35);
+  var _extends2 = __webpack_require__(36);
 
   var _extends3 = _interopRequireDefault(_extends2);
 
-  var _objectWithoutProperties2 = __webpack_require__(36);
+  var _objectWithoutProperties2 = __webpack_require__(37);
 
   var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -335,7 +337,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(28);
+  __webpack_require__(29);
 
   var _Location = __webpack_require__(9);
 
@@ -414,9 +416,9 @@ module.exports =
 
   exports.default = Link;
 
-/***/ }),
+/***/ },
 /* 9 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
   'use strict';
 
@@ -426,15 +428,15 @@ module.exports =
 
   var _ExecutionEnvironment = __webpack_require__(10);
 
-  var _createBrowserHistory = __webpack_require__(38);
+  var _createBrowserHistory = __webpack_require__(39);
 
   var _createBrowserHistory2 = _interopRequireDefault(_createBrowserHistory);
 
-  var _createMemoryHistory = __webpack_require__(39);
+  var _createMemoryHistory = __webpack_require__(40);
 
   var _createMemoryHistory2 = _interopRequireDefault(_createMemoryHistory);
 
-  var _useQueries = __webpack_require__(40);
+  var _useQueries = __webpack_require__(41);
 
   var _useQueries2 = _interopRequireDefault(_useQueries);
 
@@ -450,15 +452,15 @@ module.exports =
 
   exports.default = location;
 
-/***/ }),
+/***/ },
 /* 10 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
   module.exports = require("fbjs/lib/ExecutionEnvironment");
 
-/***/ }),
+/***/ },
 /* 11 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
   'use strict';
 
@@ -470,7 +472,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(26);
+  __webpack_require__(27);
 
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -488,9 +490,9 @@ module.exports =
 
   exports.default = Footer;
 
-/***/ }),
+/***/ },
 /* 12 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
   'use strict';
 
@@ -502,7 +504,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(27);
+  __webpack_require__(28);
 
   var _Navigation = __webpack_require__(13);
 
@@ -536,9 +538,9 @@ module.exports =
 
   exports.default = Layout;
 
-/***/ }),
+/***/ },
 /* 13 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
   'use strict';
 
@@ -550,7 +552,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(29);
+  __webpack_require__(30);
 
   var _Link = __webpack_require__(8);
 
@@ -598,9 +600,9 @@ module.exports =
 
   exports.default = Navigation;
 
-/***/ }),
+/***/ },
 /* 14 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
   'use strict';
 
@@ -629,9 +631,9 @@ module.exports =
 
   exports.default = Post;
 
-/***/ }),
+/***/ },
 /* 15 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
   'use strict';
 
@@ -701,9 +703,9 @@ module.exports =
 
   exports.default = _class;
 
-/***/ }),
+/***/ },
 /* 16 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
   'use strict';
 
@@ -776,9 +778,9 @@ module.exports =
   };
   exports.default = _class;
 
-/***/ }),
+/***/ },
 /* 17 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
   "use strict";
 
@@ -945,9 +947,9 @@ module.exports =
 
   exports.default = _class;
 
-/***/ }),
+/***/ },
 /* 18 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
   'use strict';
 
@@ -1084,17 +1086,46 @@ module.exports =
                 _react2.default.createElement(
                   'h4',
                   { className: 'job__company' },
+                  'Pivotus Ventures'
+                ),
+                _react2.default.createElement(
+                  'span',
+                  { className: 'job__position' },
+                  'Product Designer '
+                ),
+                _react2.default.createElement(
+                  'span',
+                  { className: 'job__duration' },
+                  '(July 2017 \u2014 Present)'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  { className: 'job__summary' },
+                  'Building the future of finance at an incubation and venture studio.'
+                ),
+                _react2.default.createElement(
+                  'a',
+                  { className: 'btn', href: '/work/pivotus', onClick: _Link2.default.handleClick },
+                  'Read More'
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'job' },
+                _react2.default.createElement(
+                  'h4',
+                  { className: 'job__company' },
                   'Echo&Co'
                 ),
                 _react2.default.createElement(
                   'span',
                   { className: 'job__position' },
-                  'Designer '
+                  'Interactive Designer '
                 ),
                 _react2.default.createElement(
                   'span',
                   { className: 'job__duration' },
-                  '(Summer 2016 - Present)'
+                  '(July 2016 \u2014 July 2017)'
                 ),
                 _react2.default.createElement(
                   'p',
@@ -1123,7 +1154,7 @@ module.exports =
                 _react2.default.createElement(
                   'span',
                   { className: 'job__duration' },
-                  '(Fall 2015 - Summer 2016)'
+                  '(Fall 2015 \u2014 Summer 2016)'
                 ),
                 _react2.default.createElement(
                   'p',
@@ -1218,9 +1249,9 @@ module.exports =
 
   exports.default = _class;
 
-/***/ }),
+/***/ },
 /* 19 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
   'use strict';
 
@@ -1247,9 +1278,9 @@ module.exports =
       * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
       */
 
-/***/ }),
+/***/ },
 /* 20 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
   "use strict";
 
@@ -1324,9 +1355,9 @@ module.exports =
 
   exports.default = _class;
 
-/***/ }),
+/***/ },
 /* 21 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
   "use strict";
 
@@ -1397,9 +1428,9 @@ module.exports =
 
   exports.default = _class;
 
-/***/ }),
+/***/ },
 /* 22 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
   "use strict";
 
@@ -1511,9 +1542,9 @@ module.exports =
 
   exports.default = _class;
 
-/***/ }),
+/***/ },
 /* 23 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
   "use strict";
 
@@ -1720,9 +1751,86 @@ module.exports =
 
   exports.default = _class;
 
-/***/ }),
+/***/ },
 /* 24 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
+
+  "use strict";
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+
+  var _getPrototypeOf = __webpack_require__(2);
+
+  var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+  var _classCallCheck2 = __webpack_require__(3);
+
+  var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+  var _createClass2 = __webpack_require__(4);
+
+  var _createClass3 = _interopRequireDefault(_createClass2);
+
+  var _possibleConstructorReturn2 = __webpack_require__(6);
+
+  var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+  var _inherits2 = __webpack_require__(5);
+
+  var _inherits3 = _interopRequireDefault(_inherits2);
+
+  var _react = __webpack_require__(1);
+
+  var _react2 = _interopRequireDefault(_react);
+
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+  var _class = function (_Component) {
+    (0, _inherits3.default)(_class, _Component);
+
+    function _class() {
+      (0, _classCallCheck3.default)(this, _class);
+      return (0, _possibleConstructorReturn3.default)(this, (_class.__proto__ || (0, _getPrototypeOf2.default)(_class)).apply(this, arguments));
+    }
+
+    (0, _createClass3.default)(_class, [{
+      key: "render",
+      value: function render() {
+        return _react2.default.createElement(
+          "div",
+          { className: "fadeIn" },
+          _react2.default.createElement(
+            "section",
+            { className: "intro" },
+            _react2.default.createElement(
+              "h1",
+              { className: "heading--name" },
+              "Pivotus Ventures"
+            ),
+            _react2.default.createElement(
+              "p",
+              null,
+              "Coming soon."
+            ),
+            _react2.default.createElement(
+              "a",
+              { href: "http://pivotusventures.com", className: "txt-link" },
+              "Visit"
+            )
+          )
+        );
+      }
+    }]);
+    return _class;
+  }(_react.Component);
+
+  exports.default = _class;
+
+/***/ },
+/* 25 */
+/***/ function(module, exports, __webpack_require__) {
 
   "use strict";
 
@@ -1829,9 +1937,9 @@ module.exports =
 
   exports.default = _class;
 
-/***/ }),
-/* 25 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ },
+/* 26 */
+/***/ function(module, exports, __webpack_require__) {
 
   "use strict";
 
@@ -1905,9 +2013,9 @@ module.exports =
 
   exports.default = _class;
 
-/***/ }),
-/* 26 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ },
+/* 27 */
+/***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(7)();
   // imports
@@ -1919,9 +2027,9 @@ module.exports =
   // exports
 
 
-/***/ }),
-/* 27 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ },
+/* 28 */
+/***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(7)();
   // imports
@@ -1933,9 +2041,9 @@ module.exports =
   // exports
 
 
-/***/ }),
-/* 28 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ },
+/* 29 */
+/***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(7)();
   // imports
@@ -1947,9 +2055,9 @@ module.exports =
   // exports
 
 
-/***/ }),
-/* 29 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ },
+/* 30 */
+/***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(7)();
   // imports
@@ -1961,77 +2069,77 @@ module.exports =
   // exports
 
 
-/***/ }),
-/* 30 */
-/***/ (function(module, exports) {
-
-  module.exports = {"__content":"<p>module.exports = {&quot;__content&quot;:&quot;<p>Yo</p>\\n&quot;}</p>\n"}
-
-/***/ }),
+/***/ },
 /* 31 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
   module.exports = {"__content":"<p>module.exports = {&quot;__content&quot;:&quot;<p>Yo</p>\\n&quot;}</p>\n"}
 
-/***/ }),
+/***/ },
 /* 32 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
+
+  module.exports = {"__content":"<p>module.exports = {&quot;__content&quot;:&quot;<p>Yo</p>\\n&quot;}</p>\n"}
+
+/***/ },
+/* 33 */
+/***/ function(module, exports) {
 
   module.exports = require("babel-core/register");
 
-/***/ }),
-/* 33 */
-/***/ (function(module, exports) {
+/***/ },
+/* 34 */
+/***/ function(module, exports) {
 
   module.exports = require("babel-polyfill");
 
-/***/ }),
-/* 34 */
-/***/ (function(module, exports) {
+/***/ },
+/* 35 */
+/***/ function(module, exports) {
 
   module.exports = require("babel-runtime/helpers/asyncToGenerator");
 
-/***/ }),
-/* 35 */
-/***/ (function(module, exports) {
+/***/ },
+/* 36 */
+/***/ function(module, exports) {
 
   module.exports = require("babel-runtime/helpers/extends");
 
-/***/ }),
-/* 36 */
-/***/ (function(module, exports) {
+/***/ },
+/* 37 */
+/***/ function(module, exports) {
 
   module.exports = require("babel-runtime/helpers/objectWithoutProperties");
 
-/***/ }),
-/* 37 */
-/***/ (function(module, exports) {
+/***/ },
+/* 38 */
+/***/ function(module, exports) {
 
   module.exports = require("babel-runtime/regenerator");
 
-/***/ }),
-/* 38 */
-/***/ (function(module, exports) {
+/***/ },
+/* 39 */
+/***/ function(module, exports) {
 
   module.exports = require("history/lib/createBrowserHistory");
 
-/***/ }),
-/* 39 */
-/***/ (function(module, exports) {
+/***/ },
+/* 40 */
+/***/ function(module, exports) {
 
   module.exports = require("history/lib/createMemoryHistory");
 
-/***/ }),
-/* 40 */
-/***/ (function(module, exports) {
+/***/ },
+/* 41 */
+/***/ function(module, exports) {
 
   module.exports = require("history/lib/useQueries");
 
-/***/ }),
-/* 41 */
-/***/ (function(module, exports) {
+/***/ },
+/* 42 */
+/***/ function(module, exports) {
 
   module.exports = require("react-dom");
 
-/***/ })
+/***/ }
 /******/ ]);
